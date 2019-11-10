@@ -1,34 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/MyPatient" />
-  <name value="MyPatient" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/Patient" />
+  <version value="0.1" />
+  <name value="HELP_Patient" />
+  <title value="Patient im SMITH-Use-Case HELP" />
   <status value="draft" />
+  <description value="Dieses Profil beschreibt einen in den SMITH-Use-Case HELP eingeschlossenen Patienten." />
   <fhirVersion value="4.0.0" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="cda" />
-    <uri value="http://hl7.org/v3/cda" />
-    <name value="CDA (R2)" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="loinc" />
-    <uri value="http://loinc.org" />
-    <name value="LOINC code for the element" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
