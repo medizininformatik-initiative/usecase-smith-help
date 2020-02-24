@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Mikrobiologiebefunde_Antibiotische_Vorbehandlung" />
-  <name value="HELP_Mikrobiologiebefunde_Antibiotische_Vorbehandlung" />
+  <url value="http://smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Antibiotische-Vorbehandlung_Medication" />
+  <name value="HELP_Mikrobiologie_Antibiotische-Vorbehandlung_Medication" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>

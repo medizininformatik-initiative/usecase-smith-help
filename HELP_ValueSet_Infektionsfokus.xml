@@ -1,0 +1,647 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.14--20190708125329"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-07-08T12:53:29+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.14--20190708125329"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.14"/>
+    </identifier>
+    <version value="2019-07-08T12:53:29"/>
+    <name value="Infektionsfokus"/>
+    <title value="Infektionsfokus"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="Infektionsfokus"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="440653007"/>
+                <display value="Infection associated with catheter (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infection associated with catheter (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Gefäßkatheter assoziierte Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="234215001"/>
+                <display value="Infected pacemaker (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infected pacemaker (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Elektrisches intrakardiales Device Infektion&#160;"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="459151006"/>
+                <display value="Infective endocarditis of tricuspid valve (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infective endocarditis of tricuspid valve (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Trikuspidalklappe Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="459153009"/>
+                <display value="Infective endocarditis of pulmonary valve (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infective endocarditis of pulmonary valve (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Pulmonalklappe Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="459152004"/>
+                <display value="Infective endocarditis of mitral valve (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infective endocarditis of mitral valve (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Mitralklappe Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="13617004"/>
+                <display value="Tracheobronchitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Tracheobronchitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Tracheobronchitis "/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="459068007"/>
+                <display value="Infective endocarditis of aortic valve (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infective endocarditis of aortic valve (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Aortenklappe Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="233604007"/>
+                <display value="Pneumonia (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Pneumonia (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Pneumonie"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="47597000"/>
+                <display value="Mediastinitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Mediastinitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Mediastinitis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="58554001"/>
+                <display value="Empyema of pleura (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Empyema of pleura (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Pleuraempyem"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="73452002"/>
+                <display value="Abscess of lung (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Abscess of lung (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Lungenabszess"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="68566005"/>
+                <display value="Urinary tract infectious disease (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Urinary tract infectious disease (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Harnwegsinfektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="312155003"/>
+                <display value="Genital infection (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Genital infection (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infektion der Geschlechtsorgane"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="7180009"/>
+                <display value="Meningitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Meningitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Meningitis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="45170000"/>
+                <display value="Encephalitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Encephalitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Enzephalitis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="441806004"/>
+                <display value="Abscess of brain (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Abscess of brain (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Hirnabszess"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="440653007"/>
+                <display value="Infection associated with catheter (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infection associated with catheter (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="VP-Shunt assoziiert/EVD assoziiert&#160;"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="60168000"/>
+                <display value="Osteomyelitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Osteomyelitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Osteomyelitis (außer Spondylodiszitis)"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="2304001"/>
+                <display value="Discitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Discitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Spondylodiszitis, mit Osteosynthesematerial&#160;"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="443910006"/>
+                <display value="Infection of total hip joint prosthesis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infection of total hip joint prosthesis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Hüfte-Implantat Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="433084008"/>
+                <display value="Infection of total knee joint prosthesis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infection of total knee joint prosthesis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Knie-Implantat Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="232208008"/>
+                <display value="Ear, nose and throat disorder (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Ear, nose and throat disorder (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="HNO/Oropharyngeale Infektionen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="76581006"/>
+                <display value="Cholecystitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Cholecystitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Gallenblase/Gallenwege"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="235859005"/>
+                <display value="Liver disorder due to infection (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Liver disorder due to infection (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Leberversage wegen Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="48661000"/>
+                <display value="Peritonitis (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Peritonitis (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Peritonitis/Pankreas "/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="95880003"/>
+                <display value="Soft tissue infection (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Soft tissue infection (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Weichteile Infektion"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="19824006"/>
+                <display value="Infection of skin and/or subcutaneous tissue (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Infection of skin and/or subcutaneous tissue (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Haut und/oder Weichteilinfektionen&#160;"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="33910007"/>
+                <display value="Postoperative infection (disorder)"/>
+                <designation>
+                    <language value="en"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Postoperative infection (disorder)"/>
+                </designation>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Postoperative Wundinfektionen&#160;"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

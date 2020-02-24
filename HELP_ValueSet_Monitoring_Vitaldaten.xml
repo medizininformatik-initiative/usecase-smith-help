@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.9--20190609175240"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-06-09T17:52:40+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.9--20190609175240"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.9"/>
+    </identifier>
+    <version value="2019-06-09T17:52:40"/>
+    <name value="HELP-Monitoring-Vitaldaten"/>
+    <title value="HELP-Monitoring-Vitaldaten"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Monitoring-Vitaldaten"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="8478-0"/>
+                <display value="Mean blood pressure"/>
+            </concept>
+            <concept>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </concept>
+            <concept>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </concept>
+            <concept>
+                <code value="8867-4"/>
+                <display value="Heart rate"/>
+            </concept>
+            <concept>
+                <code value="9279-1"/>
+                <display value="Respiratory rate"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

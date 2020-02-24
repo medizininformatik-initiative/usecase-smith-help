@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_MiBi_Material_Isolat_Specimen" />
-  <name value="HELP_MiBi_Material_Isolat_Specimen" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Material-Isolat_Specimen" />
+  <name value="HELP_Mikrobiologie_Material-Isolat_Specimen" />
   <status value="draft" />
+  <contact>
+    <name value="SMITH_UKJ" />
+  </contact>
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -28,7 +31,10 @@
     <element id="Specimen.identifier">
       <path value="Specimen.identifier" />
       <min value="1" />
-      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.status">
+      <path value="Specimen.status" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.type">
@@ -38,15 +44,19 @@
     </element>
     <element id="Specimen.type.coding">
       <path value="Specimen.type.coding" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.type.coding.system">
       <path value="Specimen.type.coding.system" />
+      <min value="1" />
       <fixedUri value="http://hl7.org/fhir/v2/0487/" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.type.coding.code">
       <path value="Specimen.type.coding.code" />
+      <min value="1" />
       <fixedCode value="ISLT" />
       <mustSupport value="true" />
     </element>

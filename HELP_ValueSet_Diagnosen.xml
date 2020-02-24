@@ -1,0 +1,138 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.8--20190609160306"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-06-09T16:03:06+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.8--20190609160306"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.8"/>
+    </identifier>
+    <version value="2019-06-09T16:03:06"/>
+    <name value="HELP-Diagnosen"/>
+    <title value="HELP-Diagnosen"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Diagnosen"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.409"/>
+            <concept>
+                <code value="B37.7"/>
+                <display value="Candida-Sepsis"/>
+            </concept>
+            <concept>
+                <code value="A26.7"/>
+                <display value="Erysipelothrix-Sepsis"/>
+            </concept>
+            <concept>
+                <code value="A41"/>
+                <display value="Sonstige Sepsis"/>
+            </concept>
+            <concept>
+                <code value="A42.7"/>
+                <display value="Aktinomykotische Sepsis"/>
+            </concept>
+            <concept>
+                <code value="A41.4"/>
+                <display value="Sepsis durch Anaerobier"/>
+            </concept>
+            <concept>
+                <code value="A41.9"/>
+                <display value="Sepsis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="A41.8"/>
+                <display value="Sonstige näher bezeichnete Sepsis"/>
+            </concept>
+            <concept>
+                <code value="A41.0"/>
+                <display value="Sepsis durch Staphylococcus aureus"/>
+            </concept>
+            <concept>
+                <code value="A40.8"/>
+                <display value="Sonstige Sepsis durch Streptokokken"/>
+            </concept>
+            <concept>
+                <code value="A41.3"/>
+                <display value="Sepsis durch Haemophilus influenzae"/>
+            </concept>
+            <concept>
+                <code value="A40.3"/>
+                <display value="Sepsis durch Streptococcus pneumoniae"/>
+            </concept>
+            <concept>
+                <code value="A40.0"/>
+                <display value="Sepsis durch Streptokokken, Gruppe A"/>
+            </concept>
+            <concept>
+                <code value="A40.1"/>
+                <display value="Sepsis durch Streptokokken, Gruppe B"/>
+            </concept>
+            <concept>
+                <code value="A40.2"/>
+                <display value="Sepsis durch Streptokokken, Gruppe D"/>
+            </concept>
+            <concept>
+                <code value="A41.5"/>
+                <display value="Sepsis durch sonstige gramnegative Erreger"/>
+            </concept>
+            <concept>
+                <code value="A40.9"/>
+                <display value="Sepsis durch Streptokokken, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="A41.2"/>
+                <display value="Sepsis durch nicht näher bezeichnete Staphylokokken"/>
+            </concept>
+            <concept>
+                <code value="A41.1"/>
+                <display value="Sepsis durch sonstige näher bezeichnete Staphylokokken"/>
+            </concept>
+            <concept>
+                <code value="B37.6"/>
+                <display value="Candida-Endokarditis I39.8 &#xA;        "/>
+            </concept>
+            <concept>
+                <code value="I01.1"/>
+                <display value="Akute rheumatische Endokarditis"/>
+            </concept>
+            <concept>
+                <code value="I33"/>
+                <display value="Akute und subakute Endokarditis"/>
+            </concept>
+            <concept>
+                <code value="I33.0"/>
+                <display value="Akute und subakute infektiöse Endokarditis"/>
+            </concept>
+            <concept>
+                <code value="I33.9"/>
+                <display value="Akute Endokarditis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I38"/>
+                <display value="Endokarditis, Herzklappe nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I39"/>
+                <display value="Endokarditis und Herzklappenkrankheiten bei anderenorts klassifizierten Krankheiten"/>
+            </concept>
+            <concept>
+                <code value="I39.8"/>
+                <display value="Endokarditis bei anderenorts klassifizierten Krankheiten, Herzklappe nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="R57.2"/>
+                <display value="Septischer Schock"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

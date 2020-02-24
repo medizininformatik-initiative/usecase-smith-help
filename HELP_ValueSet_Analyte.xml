@@ -1,0 +1,86 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.2--20180627171409"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2018-06-27T17:14:09+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.2--20180627171409"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.2"/>
+    </identifier>
+    <version value="2018-06-27T17:14:09"/>
+    <name value="HELP-Analyte"/>
+    <title value="HELP-Analyte"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Analyte"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="2160-0"/>
+                <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="1975-2"/>
+                <display value="Bilirubin.total [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="1920-8"/>
+                <display value="Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="1742-6"/>
+                <display value="Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="26515-7"/>
+                <display value="Platelets [#/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="28540-3"/>
+                <display value="MCHC [Mass/volume]"/>
+            </concept>
+            <concept>
+                <code value="28539-5"/>
+                <display value="MCH [Entitic mass]"/>
+            </concept>
+            <concept>
+                <code value="30428-7"/>
+                <display value="MCV [Entitic volume]"/>
+            </concept>
+            <concept>
+                <code value="20570-8"/>
+                <display value="Hematocrit [Volume Fraction] of Blood"/>
+            </concept>
+            <concept>
+                <code value="718-7"/>
+                <display value="Hemoglobin [Mass/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="26453-1"/>
+                <display value="Erythrocytes [#/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="26464-8"/>
+                <display value="Leukocytes [#/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="2164-2"/>
+                <display value="Creatinine renal clearance in 24 hour"/>
+            </concept>
+            <concept>
+                <code value="14682-9"/>
+                <display value="Creatinine [Moles/volume] in Serum or Plasma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
