@@ -1,0 +1,58 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.3--20190603141911"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-06-03T14:19:11+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.3--20190603141911"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.3"/>
+    </identifier>
+    <version value="2019-06-03T14:19:11"/>
+    <name value="HELP-Antibiotikagaben"/>
+    <title value="HELP-Antibiotikagaben"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Antibiotikagaben"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.308"/>
+            <concept>
+                <code value="29667"/>
+                <display value="Linezolid"/>
+            </concept>
+            <concept>
+                <code value="24575"/>
+                <display value="Daptomycin"/>
+            </concept>
+            <concept>
+                <code value="24548"/>
+                <display value="Teicoplanin"/>
+            </concept>
+            <concept>
+                <code value="08939"/>
+                <display value="Cefazolin"/>
+            </concept>
+            <concept>
+                <code value="06405"/>
+                <display value="Flucloxacillin"/>
+            </concept>
+            <concept>
+                <code value="18853"/>
+                <display value="Fosfomycin"/>
+            </concept>
+            <concept>
+                <code value="02599"/>
+                <display value="Rifampicin"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

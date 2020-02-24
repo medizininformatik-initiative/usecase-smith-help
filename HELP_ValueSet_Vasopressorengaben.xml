@@ -1,0 +1,78 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.6--20190603143003"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-06-03T14:30:03+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.6--20190603143003"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.6"/>
+    </identifier>
+    <version value="2019-06-03T14:30:03"/>
+    <name value="HELP-Vasopressorengaben"/>
+    <title value="HELP-Vasopressorengaben"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Vasopressorengaben"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.308"/>
+            <concept>
+                <code value="41219"/>
+                <display value="Argipressinacetat (1:x) y H2O"/>
+            </concept>
+            <concept>
+                <code value="42245"/>
+                <display value="Selepressin"/>
+            </concept>
+            <concept>
+                <code value="04334"/>
+                <display value="Argipressin"/>
+            </concept>
+            <concept>
+                <code value="12826"/>
+                <display value="Vasopressin"/>
+            </concept>
+            <concept>
+                <code value="12890"/>
+                <display value="Dobutaminhydrochlorid"/>
+            </concept>
+            <concept>
+                <code value="12888"/>
+                <display value="Dobutaminlactobionat"/>
+            </concept>
+            <concept>
+                <code value="13326"/>
+                <display value="Dobutamin"/>
+            </concept>
+            <concept>
+                <code value="00003"/>
+                <display value="Epinephrin"/>
+            </concept>
+            <concept>
+                <code value="00441"/>
+                <display value="Norephinephrin"/>
+            </concept>
+            <concept>
+                <code value="00229"/>
+                <display value="Norepinephrinhydrochlorid"/>
+            </concept>
+            <concept>
+                <code value="00230"/>
+                <display value="Norepinephrintartrat/Noradrenalintartrat"/>
+            </concept>
+            <concept>
+                <code value="12732"/>
+                <display value="Norepinephrin[(R,R)-tartrat]"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

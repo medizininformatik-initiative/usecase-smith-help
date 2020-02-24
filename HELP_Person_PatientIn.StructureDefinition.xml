@@ -1,0 +1,46 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://smith.care/fhir/StructureDefinition/HELP_Person_PatientIn" />
+  <name value="HELP_Person_PatientIn" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.id">
+      <path value="Patient.id" />
+      <min value="1" />
+    </element>
+    <element id="Patient.meta">
+      <path value="Patient.meta" />
+      <min value="1" />
+    </element>
+    <element id="Patient.meta.lastUpdated">
+      <path value="Patient.meta.lastUpdated" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid">
+      <path value="Patient.identifier" />
+      <sliceName value="pid" />
+    </element>
+    <element id="Patient.identifier:pid.use">
+      <path value="Patient.identifier.use" />
+      <fixedCode value="usual" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <max value="1" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier">
+      <path value="Patient.name.prefix.extension" />
+      <sliceName value="prefix-qualifier" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:prefix">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <sliceName value="prefix" />
+    </element>
+  </differential>
+</StructureDefinition>

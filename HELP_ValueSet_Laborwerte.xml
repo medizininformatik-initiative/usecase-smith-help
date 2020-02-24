@@ -1,0 +1,70 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.11--20190609182811"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-06-09T18:28:11+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.11--20190609182811"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.11"/>
+    </identifier>
+    <version value="2019-06-09T18:28:11"/>
+    <name value="HELP-Laborwerte"/>
+    <title value="HELP-Laborwerte"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Laborwerte"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="54363-7"/>
+                <display value="Bilirubin.total [Moles/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="2164-2"/>
+                <display value="Creatinine renal clearance in 24 hour"/>
+            </concept>
+            <concept>
+                <code value="76625-3"/>
+                <display value="Alanine aminotransferase [Enzymatic activity/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="1920-8"/>
+                <display value="Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="26464-8"/>
+                <display value="Leukocytes [#/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="26515-7"/>
+                <display value="Platelets [#/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="1988-5"/>
+                <display value="C reactive protein [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="33959-8"/>
+                <display value="Procalcitonin [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="32693-4"/>
+                <display value="Lactate [Moles/volume] in Blood"/>
+            </concept>
+            <concept>
+                <code value="31012-8"/>
+                <display value="Vancomycin [Moles/volume] in Serum or Plasma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

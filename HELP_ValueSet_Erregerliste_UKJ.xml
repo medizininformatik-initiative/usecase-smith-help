@@ -1,0 +1,551 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.17--20191111121503"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2019-11-11T12:15:03+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.17--20191111121503"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.17"/>
+    </identifier>
+    <version value="2019-11-11T12:15:03"/>
+    <name value="HELP-Erregerliste-UKJ"/>
+    <title value="HELP-Erregerliste-UKJ"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP-Erregerliste-UKJ"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="3092008"/>
+                <display value="Staphylococcus aureus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1100"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="60875001"/>
+                <display value="Staphylococcus epidermidis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1108"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="76969000"/>
+                <display value="Staphylococcus caprae (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1134"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="432505008"/>
+                <display value="Staphylococcus hominis subspecies hominis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1160"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="438202004"/>
+                <display value="Staphylococcus hominis subspecies novobiosepticus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1161"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="41103009"/>
+                <display value="Staphylococcus saccharolyticus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1162"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="440569005"/>
+                <display value="Staphylococcus vitulinus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1163"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="65119002"/>
+                <display value="Genus Staphylococcus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1170"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="19683001"/>
+                <display value="Staphylococcus hyicus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1135"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="440569005"/>
+                <display value="Staphylococcus vitulinus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1136"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="115329001"/>
+                <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1199"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="72465001"/>
+                <display value="Staphylococcus arlettae (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1101"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="34605002"/>
+                <display value="Staphylococcus intermedius (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1103"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="113963006"/>
+                <display value="Staphylococcus cohnii ss cohnii (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1104"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="34605002"/>
+                <display value="Staphylococcus intermedius (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1105"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="103493004"/>
+                <display value="Staphylococcus cohnii subspecies urealyticus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1106"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="60875001"/>
+                <display value="Staphylococcus epidermidis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1107"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="103495006"/>
+                <display value="Staphylococcus pasteuri (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1109"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="116197008"/>
+                <display value="Staphylococcus, coagulase negative (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1110"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="19743000"/>
+                <display value="Staphylococcus saprophyticus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1111"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="8056006"/>
+                <display value="Staphylococcus gallinarum (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1112"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="66872005"/>
+                <display value="Staphylococcus cohnii (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1113"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="32737005"/>
+                <display value="Staphylococcus xylosus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1114"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="56629004"/>
+                <display value="Staphylococcus chomogenes (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1115"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="83452006"/>
+                <display value="Staphylococcus haemolyticus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1116"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="53227003"/>
+                <display value="Staphylococcus kloosii (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1117"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="28217008"/>
+                <display value="Staphylococcus equorum (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1118"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="44827007"/>
+                <display value="Staphylococcus hominis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1119"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="63550006"/>
+                <display value="Staphylococcus warneri (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1120"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="40347003"/>
+                <display value="Staphylococcus capitis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1121"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="52122005"/>
+                <display value="Staphylococcus simulans (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1122"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="19683001"/>
+                <display value="Staphylococcus hyicus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1123"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="56629004"/>
+                <display value="Staphylococcus chomogenes (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1124"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="70806002"/>
+                <display value="Staphylococcus sciuri (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1125"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="40253001"/>
+                <display value="Staphylococcus lentus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1126"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="45654003"/>
+                <display value="Staphylococcus auricularis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1127"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="9784002"/>
+                <display value="Staphylococcus carnosus (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1128"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="103494005"/>
+                <display value="Staphylococcus lugdunensis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1129"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="131360000"/>
+                <display value="Staphylococcus schleiferi (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1131"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="113965004"/>
+                <display value="Staphylococcus felis (organism)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="m1132"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

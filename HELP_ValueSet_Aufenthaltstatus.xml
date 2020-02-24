@@ -1,0 +1,46 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.22.11.25--20200116154808"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-01-16T15:48:08+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.25--20200116154808"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.22.11.25"/>
+    </identifier>
+    <version value="2020-01-16T15:48:08"/>
+    <name value="itsaufenthaltstatus"/>
+    <title value="ITS-Aufenthaltstatus"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="ITS-Aufenthaltstatus"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/ValueSet/encounter-status"/>
+            <concept>
+                <code value="unknown"/>
+                <display value="unknown"/>
+            </concept>
+            <concept>
+                <code value="planned"/>
+                <display value="planned"/>
+            </concept>
+            <concept>
+                <code value="in-progress"/>
+                <display value="in-progress"/>
+            </concept>
+            <concept>
+                <code value="finished"/>
+                <display value="finished"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
