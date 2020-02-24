@@ -1,0 +1,22 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <url value="http://www.smith.care/fhir/StructureDefinition/HELP_ResearchSubject" />
+    <name value="HELP_Studienteilnehmer" />
+    <status value="draft" />
+    <fhirVersion value="4.0.0" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="ResearchSubject" />
+    <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="ResearchSubject.assignedArm">
+            <path value="ResearchSubject.assignedArm" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="required" />
+                <description value="HELP-Studienarme" />
+                <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.18--20191112155320" />
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
