@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_Observation_R4" />
+  <name value="HELP_Labor_Observation_R4" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL_Duerschmid" />
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.identifier:analyseBefundCode">
+      <path value="Observation.identifier" />
+      <sliceName value="analyseBefundCode" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.use">
+      <path value="Observation.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation">
+      <path value="Observation.category.coding" />
+      <sliceName value="loinc-observation" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="observation-category" />
+    </element>
+    <element id="Observation.category.coding:observation-category.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.11--20190609182811" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter.reference">
+      <path value="Observation.encounter.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.reference">
+      <path value="Observation.performer.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.performer.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding">
+      <path value="Observation.interpretation.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.system">
+      <path value="Observation.interpretation.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.code">
+      <path value="Observation.interpretation.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.note.text">
+      <path value="Observation.note.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.high">
+      <path value="Observation.referenceRange.high" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.high.value">
+      <path value="Observation.referenceRange.high.value" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
