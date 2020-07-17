@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_DiagnosticReport_R4" />
+  <name value="HELP_Labor_DiagnosticReport_R4b" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL_Duerschmid" />
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/DiagnosticReportLab" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.identifier:befund">
+      <path value="DiagnosticReport.identifier" />
+      <sliceName value="befund" />
+      <mustSupport value="false" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.use">
+      <path value="DiagnosticReport.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.basedOn">
+      <path value="DiagnosticReport.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://smith.care/fhir/StructureDefinition/HELP_Labor_ServiceRequest_R4" />
+      </type>
+      <fixedReference>
+        <type value="ServiceRequest" />
+      </fixedReference>
+    </element>
+    <element id="DiagnosticReport.basedOn.reference">
+      <path value="DiagnosticReport.basedOn.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:loinc-lab">
+      <path value="DiagnosticReport.category.coding" />
+      <sliceName value="loinc-lab" />
+    </element>
+    <element id="DiagnosticReport.category.coding:loinc-lab.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DiagnosticReport.category.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
+      <path value="DiagnosticReport.category.coding" />
+      <sliceName value="diagnostic-service-sections" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DiagnosticReport.category.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.code.coding:loinc-labReport">
+      <path value="DiagnosticReport.code.coding" />
+      <sliceName value="loinc-labReport" />
+    </element>
+    <element id="DiagnosticReport.code.coding:loinc-labReport.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DiagnosticReport.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.subject.reference">
+      <path value="DiagnosticReport.subject.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DiagnosticReport.performer.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_Observation_R4" />
+      </type>
+      <fixedReference>
+        <type value="Observation" />
+      </fixedReference>
+    </element>
+    <element id="DiagnosticReport.result.reference">
+      <path value="DiagnosticReport.result.reference" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
