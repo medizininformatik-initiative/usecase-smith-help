@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/HELP_Fremdkoerper_Device_R4" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Fremdkoerper_Device_R4" />
   <name value="HELP_Fremdkoerper_Device_R4" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -112,12 +112,6 @@
       <isSummary value="true" />
     </element>
     <element id="Device.meta">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." />
@@ -226,12 +220,6 @@
       </mapping>
     </element>
     <element id="Device.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -300,12 +288,6 @@
       </mapping>
     </element>
     <element id="Device.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.extension" />
       <slicing>
         <discriminator>
@@ -357,12 +339,6 @@
       </mapping>
     </element>
     <element id="Device.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.modifierExtension" />
       <slicing>
         <discriminator>
@@ -417,12 +393,6 @@
       </mapping>
     </element>
     <element id="Device.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.identifier" />
       <short value="Instance identifier" />
       <definition value="Unique instance identifiers assigned to a device by manufacturers other organizations or owners." />
@@ -1290,7 +1260,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1355,7 +1325,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -1380,12 +1350,6 @@
       </mapping>
     </element>
     <element id="Device.definition">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.definition" />
       <short value="The reference to the definition for the device" />
       <definition value="The reference to the definition for the device." />
@@ -1416,7 +1380,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1428,12 +1392,6 @@
       </mapping>
     </element>
     <element id="Device.udiCarrier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.udiCarrier" />
       <short value="Unique Device Identifier (UDI) Barcode string" />
       <definition value="Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold." />
@@ -1495,12 +1453,6 @@
       </mapping>
     </element>
     <element id="Device.udiCarrier.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.udiCarrier.extension" />
       <slicing>
         <discriminator>
@@ -1552,12 +1504,6 @@
       </mapping>
     </element>
     <element id="Device.udiCarrier.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.udiCarrier.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -1889,12 +1835,6 @@
       </mapping>
     </element>
     <element id="Device.statusReason">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.statusReason" />
       <short value="online | paused | standby | offline | not-ready | transduc-discon | hw-discon | off" />
       <definition value="Reason for the dtatus of the Device availability." />
@@ -2189,12 +2129,6 @@
       </mapping>
     </element>
     <element id="Device.deviceName">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.deviceName" />
       <short value="The name of the device as given by the manufacturer" />
       <definition value="This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device.  This typically would be used when a person provides the name(s) or when the device represents one of the names available from DeviceDefinition." />
@@ -2246,12 +2180,6 @@
       </mapping>
     </element>
     <element id="Device.deviceName.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.deviceName.extension" />
       <slicing>
         <discriminator>
@@ -2303,12 +2231,6 @@
       </mapping>
     </element>
     <element id="Device.deviceName.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.deviceName.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2506,12 +2428,6 @@
       </mapping>
     </element>
     <element id="Device.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.type" />
       <short value="The kind or type of device" />
       <definition value="The kind or type of device." />
@@ -2561,12 +2477,6 @@
       </mapping>
     </element>
     <element id="Device.specialization">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.specialization" />
       <short value="The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication" />
       <definition value="The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication." />
@@ -2618,12 +2528,6 @@
       </mapping>
     </element>
     <element id="Device.specialization.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.specialization.extension" />
       <slicing>
         <discriminator>
@@ -2675,12 +2579,6 @@
       </mapping>
     </element>
     <element id="Device.specialization.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.specialization.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2729,12 +2627,6 @@
       </mapping>
     </element>
     <element id="Device.specialization.systemType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.specialization.systemType" />
       <short value="The standard that is used to operate and communicate" />
       <definition value="The standard that is used to operate and communicate." />
@@ -2810,12 +2702,6 @@
       </mapping>
     </element>
     <element id="Device.version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.version" />
       <short value="The actual design of the device or software version running on the device" />
       <definition value="The actual design of the device or software version running on the device." />
@@ -2867,12 +2753,6 @@
       </mapping>
     </element>
     <element id="Device.version.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.version.extension" />
       <slicing>
         <discriminator>
@@ -2924,12 +2804,6 @@
       </mapping>
     </element>
     <element id="Device.version.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.version.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2978,12 +2852,6 @@
       </mapping>
     </element>
     <element id="Device.version.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.version.type" />
       <short value="The type of the device version" />
       <definition value="The type of the device version." />
@@ -3026,12 +2894,6 @@
       </mapping>
     </element>
     <element id="Device.version.component">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.version.component" />
       <short value="A single component of the device version" />
       <definition value="A single component of the device version." />
@@ -3105,12 +2967,6 @@
       </mapping>
     </element>
     <element id="Device.property">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property" />
       <short value="The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties" />
       <definition value="The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties." />
@@ -3162,12 +3018,6 @@
       </mapping>
     </element>
     <element id="Device.property.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property.extension" />
       <slicing>
         <discriminator>
@@ -3219,12 +3069,6 @@
       </mapping>
     </element>
     <element id="Device.property.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -3273,12 +3117,6 @@
       </mapping>
     </element>
     <element id="Device.property.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property.type" />
       <short value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)" />
       <definition value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)." />
@@ -3320,12 +3158,6 @@
       </mapping>
     </element>
     <element id="Device.property.valueQuantity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property.valueQuantity" />
       <short value="Property value as a quantity" />
       <definition value="Property value as a quantity." />
@@ -3355,7 +3187,7 @@
         <human value="If a code for the unit is present, the system SHALL also be present" />
         <expression value="code.empty() or system.exists()" />
         <xpath value="not(exists(f:code)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Device" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3371,12 +3203,6 @@
       </mapping>
     </element>
     <element id="Device.property.valueCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.property.valueCode" />
       <short value="Property value as a code, e.g., NTP4 (synced to NTP)" />
       <definition value="Property value as a code, e.g., NTP4 (synced to NTP)." />
@@ -3418,12 +3244,6 @@
       </mapping>
     </element>
     <element id="Device.patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.patient" />
       <short value="Patient to whom Device is affixed" />
       <definition value="Patient information, If the device is affixed to a person." />
@@ -3455,7 +3275,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3479,12 +3299,6 @@
       </mapping>
     </element>
     <element id="Device.owner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.owner" />
       <short value="Organization responsible for device" />
       <definition value="An organization that is responsible for the provision and ongoing maintenance of the device." />
@@ -3515,7 +3329,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3535,12 +3349,6 @@
       </mapping>
     </element>
     <element id="Device.contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.contact" />
       <short value="Details for human/organization for support" />
       <definition value="Contact details for an organization or a particular human that is responsible for the device." />
@@ -3570,7 +3378,7 @@
         <human value="A system is required if a value is provided." />
         <expression value="value.empty() or system.exists()" />
         <xpath value="not(exists(f:value)) or exists(f:system)" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3598,12 +3406,6 @@
       </mapping>
     </element>
     <element id="Device.location">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.location" />
       <short value="Where the device is found" />
       <definition value="The place where the device can be found." />
@@ -3635,7 +3437,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3692,12 +3494,6 @@
       </mapping>
     </element>
     <element id="Device.note">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.note" />
       <short value="Device notes and comments" />
       <definition value="Descriptive information, usage information or implantation information that is not captured in an existing element." />
@@ -3739,12 +3535,6 @@
       </mapping>
     </element>
     <element id="Device.safety">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.safety" />
       <short value="Safety Characteristics of Device" />
       <definition value="Provides additional safety characteristics about a medical device.  For example devices containing latex." />
@@ -3791,12 +3581,6 @@
       </mapping>
     </element>
     <element id="Device.parent">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Device.parent" />
       <short value="The parent device" />
       <definition value="The parent device." />
@@ -3827,7 +3611,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </constraint>
       <mapping>
         <identity value="rim" />
