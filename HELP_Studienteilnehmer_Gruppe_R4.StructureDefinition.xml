@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4" />
   <name value="HELP_Studienteilnehmer_Gruppe_R4" />
   <status value="draft" />
   <contact>
@@ -24,12 +24,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Group.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Group.identifier" />
       <min value="1" />
       <mustSupport value="true" />
@@ -85,12 +79,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Group.member">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Group.member" />
       <mustSupport value="true" />
     </element>
@@ -102,16 +90,13 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Group.member.entity.reference" />
-      <fixedString value="Patient/*" />
+      <type>
+        <code value="string" />
+        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_Studienteilnehmer_ResearchSubject" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Group.member.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Group.member.period" />
       <min value="1" />
       <mustSupport value="true" />
