@@ -4,7 +4,7 @@
   <name value="HELP_Labor_DiagnosticReport_R4b" />
   <status value="draft" />
   <contact>
-    <name value="SMITH_UKL_Duerschmid" />
+    <name value="SMITH_UKL" />
   </contact>
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -41,10 +41,8 @@
       <sliceName value="loinc-lab" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="DiagnosticReport.category.coding.display" />
+      <fixedString value="Laboratory studies (set)" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
@@ -52,10 +50,8 @@
       <sliceName value="diagnostic-service-sections" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="DiagnosticReport.category.coding.display" />
+      <fixedString value="Laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport">
@@ -63,21 +59,44 @@
       <sliceName value="loinc-labReport" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="DiagnosticReport.code.coding.display" />
+      <fixedString value="Laboratory report" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.subject.reference">
       <path value="DiagnosticReport.subject.reference" />
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.encounter.reference">
+      <path value="DiagnosticReport.encounter.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.identifier.use">
+      <path value="DiagnosticReport.performer.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.identifier.system">
+      <path value="DiagnosticReport.performer.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.identifier.value">
+      <path value="DiagnosticReport.performer.identifier.value" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.performer.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="DiagnosticReport.performer.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.specimen.identifier.use">
+      <path value="DiagnosticReport.specimen.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.specimen.identifier.system">
+      <path value="DiagnosticReport.specimen.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.specimen.identifier.value">
+      <path value="DiagnosticReport.specimen.identifier.value" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
