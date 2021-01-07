@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://smith.care/fhir/StructureDefinition/HELP_eCRF_Antwort_R4" />
+  <name value="HELP_eCRF_Antwort_R4" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL" />
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="QuestionnaireResponse.questionnaire">
+      <path value="QuestionnaireResponse.questionnaire" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.status">
+      <path value="QuestionnaireResponse.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject.reference">
+      <path value="QuestionnaireResponse.subject.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject.display">
+      <path value="QuestionnaireResponse.subject.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.authored">
+      <path value="QuestionnaireResponse.authored" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.author">
+      <path value="QuestionnaireResponse.author" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.author.reference">
+      <path value="QuestionnaireResponse.author.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.author.display">
+      <path value="QuestionnaireResponse.author.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.source">
+      <path value="QuestionnaireResponse.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.source.reference">
+      <path value="QuestionnaireResponse.source.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item">
+      <path value="QuestionnaireResponse.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.linkId">
+      <path value="QuestionnaireResponse.item.answer.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.text">
+      <path value="QuestionnaireResponse.item.answer.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer">
+      <path value="QuestionnaireResponse.item.answer.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.linkId">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.text">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.answer">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.answer.item">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.answer.item.item">
+      <path value="QuestionnaireResponse.item.answer.item.answer.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item">
+      <path value="QuestionnaireResponse.item.answer.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.linkId">
+      <path value="QuestionnaireResponse.item.answer.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.text">
+      <path value="QuestionnaireResponse.item.answer.item.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.answer">
+      <path value="QuestionnaireResponse.item.answer.item.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.item.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.answer.item">
+      <path value="QuestionnaireResponse.item.answer.item.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item.item.item">
+      <path value="QuestionnaireResponse.item.answer.item.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item">
+      <path value="QuestionnaireResponse.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.linkId">
+      <path value="QuestionnaireResponse.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.text">
+      <path value="QuestionnaireResponse.item.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer">
+      <path value="QuestionnaireResponse.item.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.linkId">
+      <path value="QuestionnaireResponse.item.item.answer.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.text">
+      <path value="QuestionnaireResponse.item.item.answer.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.linkId">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.text">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.answer">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.answer.item.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.answer.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.linkId">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.text">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.answer">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer.item.item.item">
+      <path value="QuestionnaireResponse.item.item.answer.item.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item">
+      <path value="QuestionnaireResponse.item.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.linkId">
+      <path value="QuestionnaireResponse.item.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.text">
+      <path value="QuestionnaireResponse.item.item.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer">
+      <path value="QuestionnaireResponse.item.item.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item.text">
+      <path value="QuestionnaireResponse.item.item.item.answer.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item.answer">
+      <path value="QuestionnaireResponse.item.item.item.answer.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.item.answer.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.item.answer.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.answer.item.item">
+      <path value="QuestionnaireResponse.item.item.item.answer.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item">
+      <path value="QuestionnaireResponse.item.item.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.linkId">
+      <path value="QuestionnaireResponse.item.item.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.text">
+      <path value="QuestionnaireResponse.item.item.item.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.answer">
+      <path value="QuestionnaireResponse.item.item.item.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.item.item.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.answer.item">
+      <path value="QuestionnaireResponse.item.item.item.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.item.item.item">
+      <path value="QuestionnaireResponse.item.item.item.item.item" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
