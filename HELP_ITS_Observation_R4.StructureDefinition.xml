@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_ITS_Observation_R4" />
+  <name value="HELP_ITS_Observation_R4" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL" />
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier.use">
+      <path value="Observation.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier.system">
+      <path value="Observation.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier.value">
+      <path value="Observation.identifier.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.display">
+      <path value="Observation.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.text">
+      <path value="Observation.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter.reference">
+      <path value="Observation.encounter.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.high">
+      <path value="Observation.referenceRange.high" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.high.value">
+      <path value="Observation.referenceRange.high.value" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4" />
+  <name value="HELP_Studienteilnehmer_Gruppe_R4" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL" />
+  </contact>
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Group" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Group" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Group.identifier">
+      <path value="Group.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.identifier.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.identifier.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.actual">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.actual" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member">
+      <path value="Group.member" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member.entity.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.member.entity.reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_Studienteilnehmer_ResearchSubject" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member.period">
+      <path value="Group.member.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member.period.start">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.member.period.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member.period.end">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.member.period.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Group.member.inactive">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Group.member.inactive" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

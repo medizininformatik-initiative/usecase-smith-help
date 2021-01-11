@@ -4,7 +4,7 @@
   <name value="HELP_Labor_ServiceRequest_R4" />
   <status value="draft" />
   <contact>
-    <name value="SMITH_UKL_Duerschmid" />
+    <name value="SMITH_UKL" />
   </contact>
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -26,10 +26,8 @@
       <sliceName value="laboratory" />
     </element>
     <element id="ServiceRequest.category.coding:laboratory.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="ServiceRequest.category.coding.display" />
+      <fixedString value="Laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.subject.reference">

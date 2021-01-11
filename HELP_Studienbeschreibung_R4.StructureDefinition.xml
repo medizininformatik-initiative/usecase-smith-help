@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Studienbeschreibung_R4" />
+  <name value="HELP_Studienbeschreibung_R4" />
+  <status value="draft" />
+  <contact>
+    <name value="SMITH_UKL" />
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="BRIDG5.1" />
+    <uri value="https://bridgmodel.nci.nih.gov" />
+    <name value="BRIDG 5.1 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="clinicaltrials-gov" />
+    <uri value="http://clinicaltrials.gov" />
+    <name value="ClinicalTrials.gov Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ResearchStudy" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ResearchStudy.identifier">
+      <path value="ResearchStudy.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.title">
+      <path value="ResearchStudy.title" />
+      <fixedString value="HELP: A hospital-wide electronic medical record-based computerized decision support system to improve outcomes of patients with bloodstream infections" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.status">
+      <path value="ResearchStudy.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType">
+      <path value="ResearchStudy.primaryPurposeType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding">
+      <path value="ResearchStudy.primaryPurposeType.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding.system">
+      <path value="ResearchStudy.primaryPurposeType.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/codesystem-research-study-prim-purp-type.html" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding.code">
+      <path value="ResearchStudy.primaryPurposeType.coding.code" />
+      <fixedCode value="health-services-research" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.coding.display">
+      <path value="ResearchStudy.primaryPurposeType.coding.display" />
+      <fixedString value="Health Services Research" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.primaryPurposeType.text">
+      <path value="ResearchStudy.primaryPurposeType.text" />
+      <fixedString value="Anwendungsfall HELP des SMITH-Konsortiums der Medizininformatik-Initiative" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.category">
+      <path value="ResearchStudy.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.category.text">
+      <path value="ResearchStudy.category.text" />
+      <fixedString value="SMITH Use Case" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.focus">
+      <path value="ResearchStudy.focus" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.focus.coding">
+      <path value="ResearchStudy.focus.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.focus.coding.system">
+      <path value="ResearchStudy.focus.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.focus.coding.code">
+      <path value="ResearchStudy.focus.coding.code" />
+      <fixedCode value="459781000124105" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.focus.coding.display">
+      <path value="ResearchStudy.focus.coding.display" />
+      <fixedString value="Decision support system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.description">
+      <path value="ResearchStudy.description" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.enrollment">
+      <path value="ResearchStudy.enrollment" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.enrollment.reference">
+      <path value="ResearchStudy.enrollment.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.period">
+      <path value="ResearchStudy.period" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.period.start">
+      <path value="ResearchStudy.period.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.period.end">
+      <path value="ResearchStudy.period.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.sponsor">
+      <path value="ResearchStudy.sponsor" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.sponsor.reference">
+      <path value="ResearchStudy.sponsor.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.sponsor.display">
+      <path value="ResearchStudy.sponsor.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.principalInvestigator">
+      <path value="ResearchStudy.principalInvestigator" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.principalInvestigator.reference">
+      <path value="ResearchStudy.principalInvestigator.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.principalInvestigator.display">
+      <path value="ResearchStudy.principalInvestigator.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.site">
+      <path value="ResearchStudy.site" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.site.reference">
+      <path value="ResearchStudy.site.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm">
+      <path value="ResearchStudy.arm" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="name" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:KNS-Arm">
+      <path value="ResearchStudy.arm" />
+      <sliceName value="KNS-Arm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:KNS-Arm.name">
+      <path value="ResearchStudy.arm.name" />
+      <fixedString value="KNS-Arm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:KNS-Arm.description">
+      <path value="ResearchStudy.arm.description" />
+      <fixedString value="Patienten mit Nachweis von Staphylococcus in der Blutkultur, außer im SAB-Arm genannten Spezies" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:SAB-Arm">
+      <path value="ResearchStudy.arm" />
+      <sliceName value="SAB-Arm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:SAB-Arm.name">
+      <path value="ResearchStudy.arm.name" />
+      <fixedString value="SAB-Arm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.arm:SAB-Arm.description">
+      <path value="ResearchStudy.arm.description" />
+      <fixedString value="Patienten mit Nachweis von Staphylococcus aureus oder Staphylococcus lugdunensis in der Blutkultur" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective">
+      <path value="ResearchStudy.objective" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.name">
+      <path value="ResearchStudy.objective.name" />
+      <fixedString value="zielgerichteter, leitliniengerechter Einsatz von Antibiotika zur frühzeitigen Bekämpfung bakterieller Infektionen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type">
+      <path value="ResearchStudy.objective.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type.coding">
+      <path value="ResearchStudy.objective.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type.coding.system">
+      <path value="ResearchStudy.objective.type.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/research-study-objective-type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type.coding.code">
+      <path value="ResearchStudy.objective.type.coding.code" />
+      <fixedCode value="primary" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type.coding.display">
+      <path value="ResearchStudy.objective.type.coding.display" />
+      <fixedString value="Primary" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.objective.type.text">
+      <path value="ResearchStudy.objective.type.text" />
+      <fixedString value="Primärziel" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

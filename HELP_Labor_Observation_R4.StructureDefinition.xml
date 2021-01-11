@@ -21,14 +21,15 @@
       <path value="Observation.identifier.use" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.identifier:analyseBefundCode.assigner.reference">
+      <path value="Observation.identifier.assigner.reference" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category.coding:loinc-observation">
       <path value="Observation.category.coding" />
       <sliceName value="loinc-observation" />
     </element>
     <element id="Observation.category.coding:loinc-observation.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.category.coding.display" />
       <mustSupport value="true" />
     </element>
@@ -37,16 +38,10 @@
       <sliceName value="observation-category" />
     </element>
     <element id="Observation.category.coding:observation-category.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.category.coding.display" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.category.text" />
       <mustSupport value="true" />
     </element>
@@ -67,16 +62,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.code.coding.display" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.code.text" />
       <mustSupport value="true" />
     </element>
@@ -101,9 +90,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.performer.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.performer.display" />
       <mustSupport value="true" />
     </element>
@@ -121,6 +107,35 @@
     </element>
     <element id="Observation.note.text">
       <path value="Observation.note.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding">
+      <path value="Observation.method.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding.system">
+      <path value="Observation.method.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-methods" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding.code">
+      <path value="Observation.method.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding.display">
+      <path value="Observation.method.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.text">
+      <path value="Observation.method.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.specimen.display">
+      <path value="Observation.specimen.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.device.reference">
+      <path value="Observation.device.reference" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.referenceRange.high">
