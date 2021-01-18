@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Resistogramm_Observation"
+        ]
+    },
+  "id": "5052",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.276.0.76.5.308",
+        "code": "08756",
+        "display": "Vancomycin"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "effectivePeriod": {
+    "start": "2018-11-20T07:28:00+01:00",
+    "end": "2018-11-20T10:28:00+01:00"
+  },
+  "derivedFrom":{
+    "reference": "Observation/5050"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "S"
+        }
+      ]
+    }
+  ]
+}

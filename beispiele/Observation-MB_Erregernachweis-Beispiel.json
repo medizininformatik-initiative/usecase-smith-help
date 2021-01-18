@@ -1,0 +1,78 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Erregernachweis_Observation"
+        ]
+    },
+  "id": "5010",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "43409-2",
+        "display": "Bacteria identified in Isolate by Culture"
+      }
+    ], 
+     "text": "Kulturergebnis"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "issued": "2018-11-21T10:28:00+01:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "3092008",
+        "display": "Staphylococcus aureus"
+      }
+    ]
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code": "POS"
+      }
+    ]
+  },
+ "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "104177005",
+        "display": "Blood culture for bacteria, including anaerobic screen"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/5006",
+    "display": "Isolat aus der Blutkultur"
+  },
+  "hasMember": {
+    "reference": "Observation/5011"
+  }
+}

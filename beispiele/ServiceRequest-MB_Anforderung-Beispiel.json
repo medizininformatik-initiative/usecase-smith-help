@@ -1,0 +1,47 @@
+{
+  "resourceType": "ServiceRequest",
+  "meta": {
+        "profile":  [
+            "http://smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Anforderung_ServiceRequest"
+        ]
+    },
+  "id": "5090",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "active",
+  "intent": "original-order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85421-6",
+        "display": "Bacterial identification and susceptibility panel - Isolate"
+      }
+    ],
+    "text": "Erregeridentifikation und Resistenzen im Isolat"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "occurrenceDateTime": "2018-11-18T07:00:00+01:00",
+  "reasonCode": [
+    {
+      "text": "Erreger und Resistenz aus aerober Blutkultur"
+    }
+  ]
+}
