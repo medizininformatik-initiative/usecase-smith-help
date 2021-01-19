@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
   <name value="HELP_Organisation_Pruefzentrum_R4" />
   <status value="draft" />
   <contact>
@@ -34,12 +34,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Organization.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <mustSupport value="true" />
     </element>
@@ -74,22 +68,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Organization.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.type" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.type.coding" />
       <slicing>
         <discriminator>
@@ -101,12 +83,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Organization.type.coding:prov">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.type.coding" />
       <sliceName value="prov" />
       <min value="1" />

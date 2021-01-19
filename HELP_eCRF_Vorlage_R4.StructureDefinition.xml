@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_eCRF_Vorlage_R4" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_eCRF_Vorlage_R4" />
   <name value="HELP_eCRF_Vorlage_R4" />
   <status value="draft" />
   <contact>
