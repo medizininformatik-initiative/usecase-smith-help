@@ -1,0 +1,75 @@
+{
+  "resourceType": "DiagnosticReport",
+   "id": "5999",
+   "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/5090"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/valueset-diagnostic-service-sections.html",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85421-6",
+        "display": "Bacterial identification and susceptibility panel - Isolate"
+      }
+    ],
+    "text": "Erregeridentifikation und Resistenzen im Isolat"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-18T06:50:00Z",
+  "issued": "2018-11-21T10:28:00+01:00",
+  "performer": [
+    {
+        "reference": "Organization/7772",
+        "display": "IKCL"
+    }
+  ],
+  "specimen": {
+    "reference": "Specimen/5005",
+    "display": "Blutkultur"
+  },
+  "result": [
+    {
+      "reference": "Observation/5010"
+    },
+     {
+      "reference": "Observation/5030"
+    },
+    {
+      "reference": "Observation/5040"
+    },
+    {
+      "reference": "Observation/5050"
+    }
+  ],
+  "conclusion": "Originalpräparat aerobe Blutkultur telefoniert am 21.11.2018 13:51, ICD-Kodierhilfe..usw.",
+  "conclusionCode": 
+    {
+      "text": "Sepsis"
+    }
+  
+}
