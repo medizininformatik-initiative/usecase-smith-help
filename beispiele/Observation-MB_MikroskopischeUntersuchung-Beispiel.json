@@ -2,10 +2,10 @@
   "resourceType": "Observation",
   "meta": {
         "profile":  [
-            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologiebefund_Inkubationszeit_Observation_R4"
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Mikroskopische_Untersuchung"
         ]
     },
-  "id": "5040",
+  "id": "5030",
   "identifier": [
     {
       "use": "official",
@@ -24,15 +24,15 @@
       ]
     }
   ],
-   "code": {
+  "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
-        "code": "43409-2",
-        "display": "Bacteria identified in Isolate by Culture"
+        "system": "http://snomed.info/sct",
+        "code": "117259009",
+        "display": "Microscopic examination"
       }
     ], 
-     "text": "Kulturergebnis"
+     "text": "Mikroskopische Untersuchung"
   },
   "subject": {
     "reference": "Patient/111"
@@ -43,8 +43,8 @@
   "effectiveDateTime": "2018-11-20T12:05:00+01:00",
   "issued": "2018-11-21T10:28:00+01:00",
   "specimen": {
-    "reference": "Specimen/5005",
-    "display": "Whole blood"
+    "reference": "Specimen/5006",
+    "display": "Isolat aus der Blutkultur"
   },
 "component": [
     {
@@ -53,26 +53,25 @@
           
           {
             "system": "http://snomed.info/sct",
-            "code": "406646006:363589002 = 409611004"
+            "code": "409611004: 118172004 = {8745002 + 81325006}"
           }
         ],
-         "text": "aerobe Blutkultur positive nach "
+         "text": "Originalpräparat aeorbe Blutkultur"
       },
-     "valueTime": "04:54:00"
+      "valueString": "grampositive Kokken" 
     },
     {
       "code": {
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "406646006: 363589002 = 409612006"
-           }
+            "code": "409612006: 118172004 = {8745002 + 81325006}"
+          }
         ],
-         "text": "anaerobe Blutkultur positive nach "
+         "text": "Originalpräparat anaeorbe Blutkultur"
       },
-      "valueTime": "04:54:00"
-      
+      "valueString": "grampositive Kokken"
     }
   ]
+	 
 }
-
