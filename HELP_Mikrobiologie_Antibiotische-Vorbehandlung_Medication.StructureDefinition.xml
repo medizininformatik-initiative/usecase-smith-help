@@ -27,7 +27,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Medication" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication" />
   <derivation value="constraint" />
   <differential>
     <element id="Medication.status">
