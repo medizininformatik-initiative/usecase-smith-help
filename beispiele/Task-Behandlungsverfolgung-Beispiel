@@ -1,0 +1,37 @@
+{
+  "resourceType": "Task",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_CDSS_Behandlungsverfolgung_Task_R4"
+        ]
+    },
+  "id": "Task01",
+  "identifier": [
+    {
+      "use": "official",
+      "system":  "http://www.uniklinikum-jena.de/fhir/source/helptask",
+      "value": "1"
+    }
+  ],
+  "status": "in-progress",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225304007",
+        "display": "Following the program plan"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "Patient/111",
+    "display": "Max Mustermann"
+  },
+  "authoredOn": "2018-03-11T08:25:05+10:00",
+  "lastModified": "2018-03-11T08:25:05+10:00",
+  "requester": {
+    "reference": "Device/6662",
+    "display": "HELP-CDSS"
+  }
+}
