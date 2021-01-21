@@ -1,0 +1,46 @@
+{
+  "resourceType": "Task",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_CDSS_Behandlungsabweichung_Task_R4"
+        ]
+    },
+  "id": "Task01",
+  "identifier": [
+    {
+      "use": "official",
+      "system":  "http://www.uniklinikum-jena.de/fhir/source/helptask",
+      "value": "1"
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371133007",
+        "display": "Treatment modification"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "Patient/111",
+    "display": "Max Mustermann"
+  },
+  "authoredOn": "2018-10-04T08:25:05+10:00",
+  "lastModified": "2018-10-04T08:25:05+10:00",
+  "requester": {
+      "reference": "Device/6662",
+      "display": "HELP-CDSS"
+  },
+  "reasonCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "266751003",
+        "display": "Transferred from department"
+      }
+    ]
+  }
+}

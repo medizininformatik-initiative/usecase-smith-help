@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Person_PatientIn" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_PatientIn" />
   <name value="HELP_Person_PatientIn" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
     <element id="Patient.id">
@@ -34,13 +35,37 @@
       <path value="Patient.name.given" />
       <max value="1" />
     </element>
+    <element id="Patient.name.prefix.extension">
+      <path value="Patient.name.prefix.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
       <sliceName value="prefix-qualifier" />
     </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:prefix">
+    <element id="Patient.name.prefix.extension:prefix-qualifier.url">
+      <path value="Patient.name.prefix.extension.url" />
+      <fixedUri value="prefix-qualifier" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
       <path value="Patient.name.prefix.extension.value[x]" />
-      <sliceName value="prefix" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:noName">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <sliceName value="noName" />
     </element>
   </differential>
 </StructureDefinition>

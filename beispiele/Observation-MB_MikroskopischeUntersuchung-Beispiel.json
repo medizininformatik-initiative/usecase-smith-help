@@ -1,0 +1,77 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Mikroskopische_Untersuchung"
+        ]
+    },
+  "id": "5030",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/valueset-diagnostic-service-sections.html",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "117259009",
+        "display": "Microscopic examination"
+      }
+    ], 
+     "text": "Mikroskopische Untersuchung"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "issued": "2018-11-21T10:28:00+01:00",
+  "specimen": {
+    "reference": "Specimen/5006",
+    "display": "Isolat aus der Blutkultur"
+  },
+"component": [
+    {
+      "code": {
+        "coding": [
+          
+          {
+            "system": "http://snomed.info/sct",
+            "code": "409611004: 118172004 = {8745002 + 81325006}"
+          }
+        ],
+         "text": "Originalpräparat aeorbe Blutkultur"
+      },
+      "valueString": "grampositive Kokken" 
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "409612006: 118172004 = {8745002 + 81325006}"
+          }
+        ],
+         "text": "Originalpräparat anaeorbe Blutkultur"
+      },
+      "valueString": "grampositive Kokken"
+    }
+  ]
+	 
+}

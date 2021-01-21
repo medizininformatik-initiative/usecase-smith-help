@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Antibiotische-Vorbehandlung_Medication" />
-  <name value="HELP_Mikrobiologie_Antibiotische-Vorbehandlung_Medication" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Antibiotische-Vorbehandlung_Medication" />
+  <name value="HELP_Mikrobiologie_Antibiotische_Vorbehandlung_Medication" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -27,7 +27,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Medication" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication" />
   <derivation value="constraint" />
   <differential>
     <element id="Medication.status">
@@ -37,22 +37,6 @@
     <element id="Medication.amount">
       <path value="Medication.amount" />
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.ingredient.item[x]">
-      <path value="Medication.ingredient.item[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
-      <path value="Medication.ingredient.item[x]" />
-      <sliceName value="itemCodeableConcept" />
-    </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding">
-      <path value="Medication.ingredient.item[x].coding" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Medication.ingredient.isActive">
       <path value="Medication.ingredient.isActive" />

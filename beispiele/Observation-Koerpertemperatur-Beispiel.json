@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_ITS_Observation_R4"
+        ]
+    },
+  "id": "6004",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/copra",
+      "value": "987654321"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body Temperature"
+      }
+    ],
+    "text": "Körpertemperatur"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-19T12:05:00+01:00",
+  "valueQuantity": {
+    "value": 37.7,
+    "unit": "C",
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel"
+  }
+}

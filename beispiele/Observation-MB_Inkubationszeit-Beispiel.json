@@ -1,0 +1,78 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologiebefund_Inkubationszeit_Observation_R4"
+        ]
+    },
+  "id": "5040",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/valueset-diagnostic-service-sections.html",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+   "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "43409-2",
+        "display": "Bacteria identified in Isolate by Culture"
+      }
+    ], 
+     "text": "Kulturergebnis"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "issued": "2018-11-21T10:28:00+01:00",
+  "specimen": {
+    "reference": "Specimen/5005",
+    "display": "Whole blood"
+  },
+"component": [
+    {
+      "code": {
+        "coding": [
+          
+          {
+            "system": "http://snomed.info/sct",
+            "code": "406646006:363589002 = 409611004"
+          }
+        ],
+         "text": "aerobe Blutkultur positive nach "
+      },
+     "valueTime": "04:54:00"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "406646006: 363589002 = 409612006"
+           }
+        ],
+         "text": "anaerobe Blutkultur positive nach "
+      },
+      "valueTime": "04:54:00"
+      
+    }
+  ]
+}
+

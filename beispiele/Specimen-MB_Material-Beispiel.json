@@ -1,0 +1,35 @@
+{
+  "resourceType": "Specimen",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Material-Isolat_Specimen"
+        ]
+    },
+  "id": "5006",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/swisslab",
+      "value": "123456789"
+    }
+  ],
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0487/",
+        "code": "ISLT",
+        "display": "Isolate"
+      }
+    ],
+    "text":"Isolate"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "receivedTime": "2018-11-18T09:03:00Z",
+  "parent": {
+    "reference": "Specimen/5005",
+    "display": "Blutkultur"
+  }
+}

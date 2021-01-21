@@ -7,7 +7,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="ResearchSubject" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject" />
   <derivation value="constraint" />
   <differential>
     <element id="ResearchSubject.assignedArm">
