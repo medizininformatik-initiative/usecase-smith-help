@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Infektionsfokus_ja_nein_Observation_R4"]
+  },
+  "status": "final",
+  "code": {
+    "text": "Infektionsfokus nicht bekannt"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "focus": {
+    "reference": "Condition/Cond123"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "valueBoolean": "false"
+  
+}

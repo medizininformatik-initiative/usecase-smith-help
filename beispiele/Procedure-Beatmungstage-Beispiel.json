@@ -1,0 +1,39 @@
+{
+  "resourceType": "Procedure",
+  "meta": {
+    "profile": ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/i.s.h.med",
+      "value": "..."
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74201-5",
+        "display": "Days on ventilator"
+      },
+	  {
+        "system": "http://snomed.info/sct",
+        "code": "40617009",
+        "display": "Artificial respiration (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/5556"
+  },
+  "performedPeriod": {
+    "start": "2016-01-28",
+    "end": "2016-02-07"
+  }
+}
+

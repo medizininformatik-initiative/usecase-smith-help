@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Organization_Klinik_R4"
+        ]
+    },
+  "id": "7771",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/sap",
+      "value": "AN"
+    }
+  ],
+  "type": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/ValueSet/organization-type",
+                  "code": "dept"
+              }
+          ]
+      }
+  ],
+  "name": "Klinik für Anästhesiologie und Intensivmedizin",
+  "alias": "KAI",
+  "partOf": {
+    "reference": "Organization/777"
+  }
+}
