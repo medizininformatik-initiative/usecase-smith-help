@@ -1,5 +1,10 @@
 {
   "resourceType": "ResearchStudy",
+  "meta":{
+    "profile": [
+        "http://www.smith.care/fhir/StructureDefinition/HELP_Studienbeschreibung_R4"
+    ]
+  },
   "title": "HELP: A hospital-wide electronic medical record-based computerized decision support system to improve outcomes of patients with bloodstream infections",
   "id": "3330",
   "identifier": [

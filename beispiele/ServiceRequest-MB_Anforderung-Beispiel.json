@@ -2,7 +2,7 @@
   "resourceType": "ServiceRequest",
   "meta": {
         "profile":  [
-            "http://smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Anforderung_ServiceRequest"
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Anforderung_ServiceRequest"
         ]
     },
   "id": "5090",
