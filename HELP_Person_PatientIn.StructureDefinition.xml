@@ -63,9 +63,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:noName">
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:prefixValue">
       <path value="Patient.name.prefix.extension.value[x]" />
-      <sliceName value="noName" />
+      <sliceName value="prefixValue" />
     </element>
   </differential>
 </StructureDefinition>
