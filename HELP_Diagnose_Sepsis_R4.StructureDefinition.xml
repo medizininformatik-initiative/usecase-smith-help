@@ -48,6 +48,9 @@
       <sliceName value="sepsis-diagnosen" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.8--20190609160306" />
+      </patternCoding>
       <binding>
         <strength value="required" />
         <description value="Sepsis-Diagnosen: Endokarditis, Sepsis, septischer Schock und septische Metastasen" />
