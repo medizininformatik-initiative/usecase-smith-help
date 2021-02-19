@@ -1,0 +1,875 @@
+{
+  "resourceType": "Questionnaire",
+  "meta":{
+    "profile": [
+        "http://www.smith.care/fhir/StructureDefinition/HELP_eCRF_Vorlage_R4"
+    ]
+  },
+  "version": "1.",
+  "name": "CRF_HELP_KNS",
+  "title": "Dokumentationsbogen (CRF)",
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2018-12-06T12:05:00+01:00",
+  "publisher": "Prof. Mathias Pletz, Prof. André Scherag / Universitätsklinikum Jena",
+  "description": "Reduction of mortality from staphylococcal bloodstream infections through a hospital-wide electronical medical record-based computerized decision support system",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Infektion",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Infektion mit KNS",
+          "type": "choice",
+          "required": true, 
+          "answerValueSet": "valueSet/id"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Fokus",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Gefäßkatheter-assoziierte Infektion",
+          "type": "boolean", 
+          "required": true,
+          "item": [  
+            {
+              "linkId": "2.1.1",
+              "text": "falls Gefäßkatheter-assozierte Infektion",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.1",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ], 
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "peripher venös"
+                },
+                {
+                  "valueString": "zentral venös"
+                },
+                {
+                  "valueString": "permanenter Katheter"
+                },
+                {
+                  "valueString": "sonstige"
+                }
+              ]
+            }
+          ]   
+        },
+        {
+          "linkId": "2.2",
+          "text": "Infektion des kardiovaskulären Systems",
+          "type": "boolean", 
+          "required": true, 
+          "item": [
+            {
+              "linkId": "2.2.1",
+              "text": "falls Infektion des kardiovaskulären Systems",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.2",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ], 
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "Endokarditis"
+                },
+                {
+                  "valueString": "Electric-Cardiac-Device-Infektion"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.2.1.1",
+                  "text": "falls Endokarditis",
+                  "type": "choice", 
+                  "enableWhen": [
+                    {
+                      "question": "2.2.1",
+                      "operator": "=",
+                      "answerString": "Endokarditis"
+                    }
+                  ],
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueString": "Trikuspidalklappe betroffen"
+                    },
+                    {
+                      "valueString": "Pulmonalklappe betroffen"
+                    },
+                    {
+                      "valueString": "Mitralklappe betroffen"
+                    },
+                    {
+                      "valueString": "Aortenklappe betroffen"
+                    } 
+                  ],
+                  "item": [
+                    {
+                      "linkId": "2.2.1.1.1",
+                      "text": "falls Trikuspidalklappe betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.2.1.1",
+                          "operator": "=",
+                          "answerString": "Trikuspidalklappe betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    },
+                    {
+                      "linkId": "2.2.1.1.2",
+                      "text": "falls Pulmonalklappe betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.2.1.1",
+                          "operator": "=",
+                          "answerString": "Pulmonalklappe betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    },
+                    {
+                      "linkId": "2.2.1.1.3",
+                      "text": "falls Mitralklappe betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.2.1.1",
+                          "operator": "=",
+                          "answerString": "Mitralklappe betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    },
+                    {
+                      "linkId": "2.2.1.1.4",
+                      "text": "falls Aortenklappe betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.2.1.1",
+                          "operator": "=",
+                          "answerString": "Aortenklappe betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    }
+                  ]                   
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2.3",
+          "text": "Knochen und Gelenkinfektion",
+          "type": "boolean", 
+          "required": true, 
+          "item": [
+            {
+              "linkId": "2.3.1",
+              "text": "falls Knochen und Gelenkinfektion",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.3",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ], 
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "Gelenkinfektion"
+                },
+                {
+                  "valueString": "Osteomyelitis (außer Spondylodiszitis)"
+                },
+                {
+                  "valueString": "Spondylodiszitis, mit Osteosynthesematerial"
+                },
+                {
+                  "valueString": "Spondylodiszitis, ohne Osteosynthesematerial"
+                },
+                {
+                  "valueString": "andere: (Freitext)"
+                }
+              ],                       
+              "item": [
+                {
+                  "linkId": "2.3.1.1",
+                  "text": "falls Gelenkinfektion",
+                  "type": "choice", 
+                  "enableWhen": [
+                    {
+                      "question": "2.3.1",
+                      "operator": "=",
+                      "answerString": "Gelenkinfektion"
+                    }
+                  ],
+                  "required": true, 
+                  "answerOption": [
+                    {
+                      "valueString": "Hüfte betroffen"
+                    },
+                    {
+                      "valueString": "Knie betroffen"
+                    },
+                    {
+                      "valueString": "andere"
+                    }
+                  ],
+                  "item": [
+                    {
+                      "linkId": "2.3.1.1.1",
+                      "text": "falls Hüfte betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.3.1.1",
+                          "operator": "=",
+                          "answerString": "Hüfte betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    },
+                    {
+                      "linkId": "2.3.1.1.2",
+                      "text": "falls Knie betroffen",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.3.1.1",
+                          "operator": "=",
+                          "answerString": "Knie betroffen"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    },
+                    {
+                      "linkId": "2.3.1.1.3",
+                      "text": "falls andere",
+                      "type": "string",
+                      "enableWhen": [
+                        {
+                          "question": "2.3.1.1",
+                          "operator": "=",
+                          "answerString": "andere"
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "2.3.1.1.4",
+                      "text": "falls andere",
+                      "type": "choice",
+                      "enableWhen": [
+                        {
+                          "question": "2.3.1.1",
+                          "operator": "=",
+                          "answerString": "andere"
+                        }
+                      ],
+                      "answerOption": [
+                        {
+                          "valueString": "nativ"
+                        },
+                        {
+                          "valueString": "Prothese"
+                        } 
+                      ]
+                    }
+                  ]                      
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "2.4",
+          "text": "urogenitale/renale Infektionen",
+          "type": "boolean", 
+          "required": true,
+          "item": [
+            {
+              "linkId": "2.4.1",
+              "text": "falls urogenitale/renale Infektion",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.4",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true, 
+              "answerOption": [
+                {
+                  "valueString": "Harnwegsinfektion"
+                },
+                {
+                  "valueString": "Infektion der Geschlechtsorgane"
+                },
+                {
+                  "valueString": "andere: (Freitext)"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.4.1.1",
+                  "text": "andere: (Freitext)",
+                  "type": "string",
+                  "enableWhen": [
+                    {
+                      "question": "2.4.1",
+                      "operator": "=",
+                      "answerString": "andere: (Freitext)"
+                    }
+                  ]
+                }
+              ] 
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "text": "Infektion des zentralen Nervensystems",
+          "type": "boolean", 
+          "required": true,
+          "item": [
+            {
+              "linkId": "2.5.1",
+              "text": "falls Infektion des zentralen Nervensystems",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.5",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "Meningitis/Enzephalitis"
+                },
+                {
+                  "valueString": "Hirnabzess"
+                },
+                {
+                  "valueString": "VP-Shunt-assoziiert (ventrikuloperitonealer Shunt)"
+                },
+                {
+                  "valueString": "EVD-assoziiert (externe Ventrikeldrainage)"
+                },
+                {
+                  "valueString": "andere: (Freitext)"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.5.1.1",
+                  "text": "andere: (Freitext)",
+                  "type": "string",
+                  "enableWhen": [
+                    {
+                      "question": "2.5.1",
+                      "operator": "=",
+                      "answerString": "andere: (Freitext)"
+                    }
+                  ]
+                }
+              ]         
+            }
+          ]
+        },
+        {
+          "linkId": "2.6",
+          "text": "intrathorakale Infektion",
+          "type": "boolean", 
+          "required": true,
+          "item": [
+            {
+              "linkId": "2.6.1",
+              "text": "falls Intrathorakale Infektions",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.6",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ], 
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "Tracheobronchitis"
+                },
+                {
+                  "valueString": "Pneumonie"
+                },
+                {
+                  "valueString": "Mediastinitis"
+                },
+                {
+                  "valueString": "Pleuraempyem"
+                },
+                {
+                  "valueString": "Lungenabszess"
+                },
+                {
+                  "valueString": "andere: (Freitext)"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.6.1.1",
+                  "text": "andere: (Freitext)",
+                  "type": "string",
+                  "enableWhen": [
+                    {
+                      "question": "2.6.1",
+                      "operator": "=",
+                      "answerString": "andere: (Freitext)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ] 
+        },
+        {
+          "linkId": "2.7",
+          "text": "HNO-/oropharyngeale Infektion",
+          "type": "boolean", 
+          "required": true
+        },
+        {
+          "linkId": "2.8",
+          "text": "intraabdominelle Infektion",
+          "type": "boolean", 
+          "required": true, 
+          "item": [
+            {
+              "linkId": "2.8.1",
+              "text": "falls intraabdominelle Infektion",
+              "type": "choice", 
+              "enableWhen": [
+                {
+                  "question": "2.8",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ], 
+              "required": true,
+              "answerOption": [
+                {
+                  "valueString": "Gallenblase/Gallenwege"
+                },
+                {
+                  "valueString": "Leber"
+                },
+                {
+                  "valueString": "Pankreas"
+                },
+                {
+                  "valueString": "Peritonitis"
+                },
+                {
+                  "valueString": "andere: (Freitext)"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.8.1.1",
+                  "text": "andere: (Freitext)",
+                  "type": "string",
+                  "enableWhen": [
+                    {
+                      "question": "2.8.1",
+                      "operator": "=",
+                      "answerString": "andere: (Freitext)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ] 
+        },
+        {
+          "linkId": "2.9",
+          "text": "Haut- und Weichteilinfektion",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "2.10",
+          "text": "postoperative Wundinfektionen",
+          "type": "boolean", 
+          "required": true
+        },
+        {
+          "linkId": "2.11",
+          "text": "Fokus unbekannt / Fokussanierung",
+          "type": "boolean", 
+          "required": true, 
+          "item": [
+            {
+              "linkId": "2.11.1",
+              "text": "falls Fokus bekannt – Fokussanierung am: ",
+              "type": "date", 
+              "enableWhen": [
+                {
+                  "question": "2.11",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "antimikrobielle Therapie (seit 1. positiver Blutkultur bis Entlassung/Verlegung)",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Vancomycin (i.v.)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.1.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.1.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.1.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.1.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        },  
+        {
+          "linkId": "3.2",
+          "text": "Linezolid (i.v. oder p.os)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.2.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.2.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.2.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.2.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "linkId": "3.3",
+          "text": "Teicoplanin (i.v.)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.3.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.3.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.3.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.3.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "linkId": "3.4",
+          "text": "Daptomycin (i.v.)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.4.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.4.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.4.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.4.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "linkId": "3.5",
+          "text": "Rifampicin (i.v. oder p.os)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.5.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.5.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.5.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.5.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "linkId": "3.6",
+          "text": "Fosfomycin (i.v.)",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.6.1",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.6.2",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.6.3",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.6.4",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "linkId": "3.7",
+          "text": "andere (nur für KNS-Therapie) (i.v.) ",
+          "type": "group", 
+          "item": [
+            {
+              "linkId": "3.7.1",
+              "text": "Name (Freitext)",
+              "type": "string "
+            },
+            {
+              "linkId": "3.7.2",
+              "text": "Gesamtdosis in mg",
+              "type": "decimal "
+            },
+            {
+              "linkId": "3.7.3",
+              "text": "Start",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.7.4",
+              "text": "Stopp",
+              "type": "date"
+            }, 
+            {
+              "linkId": "3.7.5",
+              "text": "Indikation",
+              "type": "choice ",
+              "answerOption": [
+                {
+                  "valueString": "Therapie einer KNS-Infektion"
+                },
+                {
+                  "valueString": "Gabe empirisch od. gezielt für andere Erreger"
+                },
+                {
+                  "valueString": "keine Indikation ersichtlich"
+                }
+              ]
+            }
+          ]
+        }
+      ]  
+    }
+  ]
+}
