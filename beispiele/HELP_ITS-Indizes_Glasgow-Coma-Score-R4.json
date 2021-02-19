@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_ITS_Observation_R4"]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/copra",
+      "value": "…"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9269-2",
+        "display": "Glasgow coma score total"
+      },
+      {
+    	  "system": "http://snomed.info/sct",
+        "code": "248241002",
+        "display": "Glasgow coma score (observable entity)"
+      } 
+    ],
+    "text": "Glasgow Coma Score"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-12-02",
+  "valueQuantity": {
+    "value": 13,
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 3
+      },
+      "high": {
+        "value": 15
+      }
+    }
+  ]
+}
