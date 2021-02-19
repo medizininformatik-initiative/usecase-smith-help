@@ -92,7 +92,7 @@
       <path value="Group.member.entity.reference" />
       <type>
         <code value="string" />
-        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_Studienteilnehmer_ResearchSubject" />
+        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_PatientIn" />
       </type>
       <mustSupport value="true" />
     </element>
