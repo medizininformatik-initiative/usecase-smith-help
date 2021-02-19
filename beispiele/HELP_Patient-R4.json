@@ -1,0 +1,49 @@
+{
+  "resourceType": "Patient",
+"meta":{
+    "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient"
+    ]
+  },
+  "id": "111",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]  
+     },
+     "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier",
+     "value": "123456789",
+     "assigner": {
+       "identifier": [
+         {
+           "system": "blub",
+           "value": "4567876543456"
+         }
+       ]       
+     }
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Mustermann",
+      "given": ["Max"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2000-01-25",
+  "deceasedBoolean": false,
+  "address": [
+    {
+        "city": "Jena",
+        "postalCode": "07743",
+        "country": "DE"
+    }
+  ]
+}
