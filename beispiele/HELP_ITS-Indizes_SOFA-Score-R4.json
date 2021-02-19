@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_ITS_Observation_R4"]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/copra",
+      "value": "…"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "?",
+        "code": "?",
+        "display": "Sepsis-related Organ Failure Assessment Score"
+      }
+    ],
+    "text": "Sepsis-related Organ Failure Assessment Score"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "1999-07-02",
+  "valueQuantity": {
+    "value": 20,
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0
+      },
+      "high": {
+        "value": 24
+      }
+    }
+  ]
+}
