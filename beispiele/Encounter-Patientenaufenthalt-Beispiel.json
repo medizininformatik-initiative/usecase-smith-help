@@ -1,0 +1,32 @@
+{
+  "resourceType": "Encounter",
+  "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/KontaktGesundheitseinrichtung"
+        ]
+    },
+  "id": "555",
+  "identifier": [
+    {
+        "use": "official",
+        "system": "http://www.uniklinikum-jena.de/fhir/source/sap",
+        "value": "00194545"
+    }
+],
+  "status": "in-progress",
+  "class": {
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "code": "IMP",
+    "display": "inpatient encounter"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "period": {
+    "start": "2018-03-11",
+    "end": "2018-03-31"
+  },
+    "serviceProvider": {
+    "reference": "Organization/777"
+  }
+}

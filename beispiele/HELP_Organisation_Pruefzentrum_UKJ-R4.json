@@ -1,0 +1,33 @@
+{
+  "resourceType": "Organization",
+  "meta":{
+    "profile": [
+        "http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4"
+    ]
+  },
+  "id": "777",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+      "value": "261600736"
+    },
+    {
+      "use": "usual",
+      "system": "https://www.dimdi.de/oid/",
+      "value": "1.2.276.0.76.3.1.192"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/ValueSet/organization-type",
+          "code": "prov"
+        }
+      ]
+    }
+  ],
+  "name": "Universitätsklinikum Jena",
+  "alias": "UKJ"
+}

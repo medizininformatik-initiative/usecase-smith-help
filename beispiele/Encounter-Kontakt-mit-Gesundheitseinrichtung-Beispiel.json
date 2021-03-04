@@ -1,0 +1,47 @@
+{
+  "resourceType": "Encounter",
+  "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/KontaktGesundheitseinrichtung"
+        ]
+    },
+  "id": "5551",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/sap",
+      "value": "00194545"
+    },
+    {
+      "use": "secondary",
+      "system": "http://www.uniklinikum-jena.de/fhir/source/copra",
+      "value": "00363625"
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "http://www.medizininformatik-initiative.de/fhir/v3/ActCode",
+    "code": "DPT",
+    "display": "department encounter"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "period": {
+    "start": "2018-03-11",
+    "end": "2018-03-31"
+  },
+  "serviceProvider": {
+    "reference": "Organization/7771"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/Loc0009"
+      }
+    }
+  ],
+  "partOf": {
+    "reference": "Encounter/555"
+  }
+}

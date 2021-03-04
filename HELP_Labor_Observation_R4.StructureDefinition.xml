@@ -21,9 +21,22 @@
       <path value="Observation.identifier.use" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.identifier:analyseBefundCode.assigner.reference">
-      <path value="Observation.identifier.assigner.reference" />
-      <mustSupport value="true" />
+    <element id="Observation.identifier:analyseBefundCode.assigner">
+      <path value="Observation.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
+      </type>
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.assigner.type.coding">
+      <path value="Observation.identifier.assigner.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Observation.category.coding:loinc-observation">
       <path value="Observation.category.coding" />
@@ -69,9 +82,12 @@
       <path value="Observation.code.text" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.subject.reference">
-      <path value="Observation.subject.reference" />
-      <mustSupport value="true" />
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Observation.encounter.reference">
       <path value="Observation.encounter.reference" />

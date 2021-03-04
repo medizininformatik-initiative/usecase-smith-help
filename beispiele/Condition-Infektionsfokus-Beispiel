@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "id":"Cond123",
+  "meta": {
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Infecktionsfokus_Condition_R4"]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/ValueSet/dimdi/icd-10-gm",
+        "code": "M46.46",
+        "display": "Diszitis, nicht näher bezeichnet: Lumbalbereich"
+      }
+    ],
+    "text": "Spondylodiszitis der Lendenwirbelkörper"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "onsetDateTime": "2013-03-08",
+  "recordedDate": "2013-03-10"
+}
