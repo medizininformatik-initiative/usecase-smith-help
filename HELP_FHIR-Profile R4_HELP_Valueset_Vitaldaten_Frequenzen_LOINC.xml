@@ -1,0 +1,27 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+	<url value="http://smith.care/fhir/ValueSets/HELP_Valueset_Vitaldaten_Frequenzen_LOINC.xml"/>
+    <version value="2021-03-01T18:28:11"/>
+    <name value="HELP_Vitaldaten_Frequenzen_LOINC"/>
+    <title value="HELP_Vitaldaten_Frequenzen_LOINC"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="SMITH"/>
+    <description value="HELP_Vitaldaten_Frequenzen_LOINC"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="8867-4"/>
+                <display value="Heart rate"/>
+            </concept>
+            <concept>
+                <code value="9279-1"/>
+                <display value="Respiratory rate"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
