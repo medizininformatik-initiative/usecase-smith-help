@@ -6,7 +6,7 @@
   <contact>
     <name value="SMITH_UKE" />
   </contact>
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -54,6 +54,9 @@
       <sliceName value="staphylokokken-infektion" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.12--20190609194546" />
+      </patternCoding>
       <binding>
         <strength value="required" />
         <description value="Staphylokokken-Infektion" />
