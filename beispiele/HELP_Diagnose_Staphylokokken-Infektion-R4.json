@@ -3,7 +3,7 @@
 	"id": "Cond123456789",
     "meta":{
         "profile": [
-            "http://smith.care/fhir/StructureDefinition/HELP_Diagnose_Staphylokokken-Infektion-R4"
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Diagnose_Staphylokokken-Infektion-R4"
         ]
     },
     "clinicalStatus":{
