@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_DiagnosticReport_R4" />
-  <name value="HELP_Labor_DiagnosticReport_R4b" />
+  <name value="HELP_Labor_DiagnosticReport_R4" />
   <status value="draft" />
   <contact>
     <name value="SMITH_UKL" />
   </contact>
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/DiagnosticReportLab" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab" />
   <derivation value="constraint" />
   <differential>
     <element id="DiagnosticReport.identifier:befund">
@@ -22,110 +22,77 @@
       <path value="DiagnosticReport.identifier.use" />
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.identifier:befund.assigner">
-      <path value="DiagnosticReport.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
-      </type>
+    <element id="DiagnosticReport.identifier:befund.assigner.type">
+      <path value="DiagnosticReport.identifier.assigner.type" />
+      <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.identifier:befund.assigner.type.coding">
-      <path value="DiagnosticReport.identifier.assigner.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+    <element id="DiagnosticReport.identifier:befund.assigner.identifier.use">
+      <path value="DiagnosticReport.identifier.assigner.identifier.use" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
         <targetProfile value="http://smith.care/fhir/StructureDefinition/HELP_Labor_ServiceRequest_R4" />
       </type>
-      <fixedReference>
-        <type value="ServiceRequest" />
-      </fixedReference>
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab">
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="loinc-lab" />
     </element>
+    <element id="DiagnosticReport.category.coding:loinc-lab.system">
+      <path value="DiagnosticReport.category.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:loinc-lab.code">
+      <path value="DiagnosticReport.category.coding.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.display">
       <path value="DiagnosticReport.category.coding.display" />
-      <fixedString value="Laboratory studies (set)" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="diagnostic-service-sections" />
     </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
+      <path value="DiagnosticReport.category.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
+      <path value="DiagnosticReport.category.coding.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.display">
       <path value="DiagnosticReport.category.coding.display" />
-      <fixedString value="Laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport">
       <path value="DiagnosticReport.code.coding" />
       <sliceName value="loinc-labReport" />
     </element>
-    <element id="DiagnosticReport.code.coding:loinc-labReport.display">
-      <path value="DiagnosticReport.code.coding.display" />
-      <fixedString value="Laboratory report" />
+    <element id="DiagnosticReport.code.coding:loinc-labReport.system">
+      <path value="DiagnosticReport.code.coding.system" />
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.subject">
-      <path value="DiagnosticReport.subject" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
-      </type>
+    <element id="DiagnosticReport.code.coding:loinc-labReport.code">
+      <path value="DiagnosticReport.code.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.code.coding:loinc-labReport.display">
+      <path value="DiagnosticReport.code.coding.display" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.encounter.reference">
       <path value="DiagnosticReport.encounter.reference" />
       <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.performer.identifier.use">
-      <path value="DiagnosticReport.performer.identifier.use" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.performer.identifier.system">
-      <path value="DiagnosticReport.performer.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.performer.identifier.value">
-      <path value="DiagnosticReport.performer.identifier.value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.performer.display">
-      <path value="DiagnosticReport.performer.display" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.specimen.identifier.use">
-      <path value="DiagnosticReport.specimen.identifier.use" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.specimen.identifier.system">
-      <path value="DiagnosticReport.specimen.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.specimen.identifier.value">
-      <path value="DiagnosticReport.specimen.identifier.value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.result">
-      <path value="DiagnosticReport.result" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
-        <targetProfile value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_Observation_R4" />
-      </type>
-      <fixedReference>
-        <type value="Observation" />
-      </fixedReference>
     </element>
   </differential>
 </StructureDefinition>
