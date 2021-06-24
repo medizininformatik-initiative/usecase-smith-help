@@ -1,0 +1,273 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "meta":{
+    "profile": [
+        "http://www.smith.care/fhir/StructureDefinition/HELP_eCRF_Vorlage_R4"
+    ]
+  },
+  "id": "1",
+  "status": "completed",
+  "authored": "2020-10-26T14:15:00-05:00",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Infektion",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Infektion mit KNS",
+          "answer": [
+            {
+              "valueString": "Nein (Kontamination)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Ursprung der Infektion",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Ursprung der Infektion",
+          "answer": [
+            {
+              "valueString": "ambulant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Fokus",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Fokus unbekannt",
+          "answer": [
+            {
+              "valueBoolean": false,
+              "item": [
+                {
+                  "linkId": "3.7",
+                  "text": "Knochen und Gelenkinfektionen",
+                  "answer": [
+                    {
+                      "valueBoolean": true,
+                      "item": [
+                        {
+                          "linkId": "3.7.1",
+                          "text": "falls ja,",
+                          "answer": [
+                            {
+                              "valueString": "Spondylodiszitis, mit Osteosynthesematerial"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "permanente Fremdkörper",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Fremdkörper",
+          "answer": [
+            {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "4.1.1",
+          					"text": "falls Fremdkörper",
+          					"answer": [
+          						{
+          						"valueString": "Gelenkprothese",
+                      "item": [
+                        {
+                          "linkId": "4.1.1.1",
+            							"text": "falls Gelenkprothese",
+                          "item": [
+                            {
+               								"linkId": "4.1.1.1.1",
+               								"text": "Hüft-TEP",
+               								"answer": [
+               									{
+               										"valueBoolean": true
+               									}
+               								]
+           								  },
+                            {
+            								"linkId": "4.1.1.1.2",
+            								"text": "Knie-TEP",
+            								"answer": [
+            									{
+            										"valueBoolean": false
+            									}
+            								]
+            								},
+                            {
+            								"linkId": "4.1.1.1.3",
+            								"text": "andere:(Freitext)",
+            								"answer": [
+            									{
+            										"valueBoolean": false
+            									}
+            								]
+            								}
+                          ]
+                        }
+                      ]
+          						}
+          					]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "antimikrobielle Therapie (seit 1. positiver Blutkultur bis Entlassung/Verlegung)",
+      "item": [
+         {
+           "linkId": "5.1",
+           "text": "Vancomycin (i.v.)",
+           "item": [
+             {
+               "linkId": "5.1.1",
+               "text": "Gesamtdosis in mg",
+               "answer": [
+                 {
+                   "valueInteger": 500
+                 }
+               ]
+             },
+             {
+               "linkId": "5.1.2",
+               "text": "Start",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-01"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.1.3",
+               "text": "Ende",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-05"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.1.4",
+               "text": "Indikation",
+               "answer": [
+                 {
+                   "valueString": "Therapie einer KNS-Infektion"
+                 }
+               ]
+             }
+           ]
+         },
+         {
+           "linkId": "5.2",
+           "text": "Vancomycin (i.v.)",
+           "item": [
+             {
+               "linkId": "5.2.1",
+               "text": "Gesamtdosis in mg",
+               "answer": [
+                 {
+                   "valueInteger": 400
+                 }
+               ]
+             },
+             {
+               "linkId": "5.2.2",
+               "text": "Start",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-02"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.2.3",
+               "text": "Ende",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-06"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.2.4",
+               "text": "Indikation",
+               "answer": [
+                 {
+                   "valueString": "Therapie einer KNS-Infektion"
+                 }
+               ]
+             }
+           ]
+         },
+         {
+           "linkId": "5.3",
+           "text": "Vancomycin (i.v.)",
+           "item": [
+             {
+               "linkId": "5.3.1",
+               "text": "Gesamtdosis in mg",
+               "answer": [
+                 {
+                   "valueInteger": 300
+                 }
+               ]
+             },
+             {
+               "linkId": "5.3.2",
+               "text": "Start",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-03"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.3.3",
+               "text": "Ende",
+               "answer": [
+                 {
+                   "valueDate": "2020-01-07"
+                 }
+               ]
+             },
+             {
+               "linkId": "5.3.4",
+               "text": "Indikation",
+               "answer": [
+                 {
+                   "valueString": "Therapie einer KNS-Infektion"
+                 }
+               ]
+             }
+           ]
+         }
+      ]
+    }
+  ]
+}
