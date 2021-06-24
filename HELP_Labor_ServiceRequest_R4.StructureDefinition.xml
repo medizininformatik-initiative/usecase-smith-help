@@ -10,7 +10,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="ServiceRequest" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ServiceRequestLab" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab" />
   <derivation value="constraint" />
   <differential>
     <element id="ServiceRequest.identifier:anforderung">
@@ -21,38 +21,21 @@
       <path value="ServiceRequest.identifier.use" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.identifier:anforderung.assigner">
-      <path value="ServiceRequest.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
-      </type>
-    </element>
-    <element id="ServiceRequest.identifier:anforderung.assigner.type.coding">
-      <path value="ServiceRequest.identifier.assigner.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="ServiceRequest.category.coding:laboratory">
       <path value="ServiceRequest.category.coding" />
       <sliceName value="laboratory" />
     </element>
-    <element id="ServiceRequest.category.coding:laboratory.display">
-      <path value="ServiceRequest.category.coding.display" />
-      <fixedString value="Laboratory" />
+    <element id="ServiceRequest.category.coding:laboratory.system">
+      <path value="ServiceRequest.category.coding.system" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.subject">
-      <path value="ServiceRequest.subject" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
-      </type>
+    <element id="ServiceRequest.category.coding:laboratory.code">
+      <path value="ServiceRequest.category.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category.coding:laboratory.display">
+      <path value="ServiceRequest.category.coding.display" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.encounter.reference">
       <path value="ServiceRequest.encounter.reference" />
