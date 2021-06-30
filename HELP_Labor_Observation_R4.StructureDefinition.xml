@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Labor_Observation_R4" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Observation_R4" />
   <name value="HELP_Labor_Observation_R4" />
   <status value="draft" />
   <contact>
-    <name value="SMITH_UKL_Duerschmid" />
+    <name value="SMITH_UKL" />
   </contact>
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.identifier:analyseBefundCode">
@@ -21,26 +21,17 @@
       <path value="Observation.identifier.use" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.identifier:analyseBefundCode.assigner">
-      <path value="Observation.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Organisation_Pruefzentrum_R4" />
-      </type>
-    </element>
-    <element id="Observation.identifier:analyseBefundCode.assigner.type.coding">
-      <path value="Observation.identifier.assigner.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Observation.category.coding:loinc-observation">
       <path value="Observation.category.coding" />
       <sliceName value="loinc-observation" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.system">
+      <path value="Observation.category.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.code">
+      <path value="Observation.category.coding.code" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation.display">
       <path value="Observation.category.coding.display" />
@@ -49,6 +40,14 @@
     <element id="Observation.category.coding:observation-category">
       <path value="Observation.category.coding" />
       <sliceName value="observation-category" />
+    </element>
+    <element id="Observation.category.coding:observation-category.system">
+      <path value="Observation.category.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.code">
+      <path value="Observation.category.coding.code" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:observation-category.display">
       <path value="Observation.category.coding.display" />
@@ -65,10 +64,6 @@
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.11--20190609182811" />
-      </binding>
     </element>
     <element id="Observation.code.coding.code">
       <path value="Observation.code.coding.code" />
@@ -82,19 +77,8 @@
       <path value="Observation.code.text" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
-      </type>
-    </element>
     <element id="Observation.encounter.reference">
       <path value="Observation.encounter.reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.issued">
-      <path value="Observation.issued" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.performer">
@@ -131,7 +115,6 @@
     </element>
     <element id="Observation.method.coding.system">
       <path value="Observation.method.coding.system" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-methods" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.method.coding.code">
