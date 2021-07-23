@@ -1,0 +1,76 @@
+{
+    "resourceType": "Observation",
+    "meta": {
+        "profile": [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Observation_R4"
+        ]
+    },
+    "identifier": [{
+            "type": {
+                "coding": [{
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "OBI"
+                    }
+                ]
+            },
+            "system": "https://www.uniklinikum-leipzig.de/fhir/core/NamingSystem/observation-identifier",
+            "value": "59826-8_1234567890",
+            "assigner": {
+                "reference": "Organization/111",
+                "display": "Universitätsklinikum Leipzig"
+            }
+        }
+    ],
+    "status": "final",
+    "category": [{
+            "coding": [{
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                }, {
+                    "system": "http://loinc.org",
+                    "code": "26436-6",
+                    "display": "Laboratory studies (set)"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [{
+                "system": "http://loinc.org",
+                "code": "71695-1",
+                "display": "Immature granulocytes/100 leukocytes in Blood by Automated count"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/111"
+    },
+    "encounter": {
+        "reference": "Encounter/111"
+    },
+    "effectiveDateTime": "2021-06-02T10:29:24+01:00",
+    "_effectiveDateTime": {
+        "extension": [{
+                "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "399445004",
+                    "display": "Specimen collection date (observable entity)"
+                }
+            }
+        ]
+    },
+    "issued": "2018-03-11T10:28:00+01:00",
+    "performer": [{
+            "reference": "Organization/111",
+            "display": "Universitätsklinikum Leipzig"
+        }
+    ],
+    "valueQuantity": {
+        "value": 0.4,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+    }
+}
