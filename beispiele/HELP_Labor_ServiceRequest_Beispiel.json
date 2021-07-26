@@ -1,0 +1,62 @@
+{
+    "resourceType": "ServiceRequest",
+    "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Labor_ServiceRequest_R4"
+        ]
+    },
+    "id": "5090",
+	"identifier": [
+		{
+			"use": "official",
+			"type": {
+				"text": "DiagnosticReportnummer",
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "PLAC",
+						"display": "Placer Identifier"
+					}
+				]
+			},
+			"system": "https://www.uniklinikum-leipzig.de/fhir/core/NamingSystem/service-request-identifier",
+			"value": "12345",
+			"assigner": {
+				"reference": "Organization/111",
+				"display": "Universitätsklinikum Leipzig"
+			}
+		}
+	],
+    "status": "completed",
+    "intent": "order",
+    "category":  [
+        {
+            "coding":  [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding":  [
+            {
+                "system": "http://loinc.org",
+                "code": "85421-6",
+                "display": "Bacterial identification and susceptibility panel - Isolate"
+            }
+        ],
+        "text": "Erregeridentifikation und Resistenzen im Isolat"
+    },
+    "subject": {
+        "reference": "Patient/111"
+    },
+    "occurrenceDateTime": "2018-11-18T07:00:00+01:00",
+    "reasonCode":  [
+        {
+            "text": "Erreger und Resistenz aus aerober Blutkultur"
+        }
+    ],
+	"authoredOn": "2018-11-19T15:35:58.018+00:00"
+}
