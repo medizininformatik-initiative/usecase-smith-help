@@ -3,21 +3,43 @@
   <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Person_Studienteilnehmer_ResearchSubject" />
   <name value="HELP_Person_Studienteilnehmer_ResearchSubject" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <contact>
+    <name value="SMITH_UKL" />
+  </contact>
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="ResearchSubject" />
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject" />
   <derivation value="constraint" />
   <differential>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode">
+      <path value="ResearchSubject.identifier" />
+      <sliceName value="subjectIdentificationCode" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.use">
+      <path value="ResearchSubject.identifier.use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.type.coding">
+      <path value="ResearchSubject.identifier.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.type.coding.system">
+      <path value="ResearchSubject.identifier.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.type.coding.code">
+      <path value="ResearchSubject.identifier.type.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.type.text">
+      <path value="ResearchSubject.identifier.type.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="ResearchSubject.assignedArm">
       <path value="ResearchSubject.assignedArm" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="HELP-Studienarme" />
-        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.18--20191112155320" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
