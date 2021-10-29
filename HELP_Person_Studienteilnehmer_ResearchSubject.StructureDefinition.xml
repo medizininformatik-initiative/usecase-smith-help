@@ -40,6 +40,11 @@
     <element id="ResearchSubject.assignedArm">
       <path value="ResearchSubject.assignedArm" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="HELP-Studienarme" />
+        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.18--20191112155320" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
