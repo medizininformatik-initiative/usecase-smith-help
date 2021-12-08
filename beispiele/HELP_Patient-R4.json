@@ -1,8 +1,9 @@
 {
   "resourceType": "Patient",
 "meta":{
+    "lastUpdated": "2016-03-09T15:35:58.018+00:00",
     "profile": [
-        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient"
+        "http://www.smith.care/fhir/StructureDefinition/HELP_Person_PatientIn"
     ]
   },
   "id": "111",
@@ -22,8 +23,8 @@
      "assigner": {
        "identifier": [
          {
-           "system": "blub",
-           "value": "4567876543456"
+           "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+           "value": "261401052"
          }
        ]       
      }
