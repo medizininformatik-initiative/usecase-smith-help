@@ -6,7 +6,7 @@
   <contact>
     <name value="SMITH_UKE" />
   </contact>
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -43,58 +43,15 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.code.coding:staphylokokken-infektion">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
+    <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
-      <sliceName value="staphylokokken-infektion" />
+      <sliceName value="icd10-gm" />
       <min value="1" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.12--20190609194546" />
-      </patternCoding>
       <binding>
         <strength value="required" />
         <description value="Staphylokokken-Infektion" />
         <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.12--20190609194546" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:staphylokokken-infektion.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.code.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Condition.code.coding:staphylokokken-infektion.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Condition.code.coding:staphylokokken-infektion.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.code.coding.display" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
