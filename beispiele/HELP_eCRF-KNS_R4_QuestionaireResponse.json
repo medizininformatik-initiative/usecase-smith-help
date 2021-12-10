@@ -2,7 +2,7 @@
   "resourceType": "QuestionnaireResponse",
   "meta":{
     "profile": [
-        "http://www.smith.care/fhir/StructureDefinition/HELP_eCRF_Vorlage_R4"
+        "http://www.smith.care/fhir/StructureDefinition/HELP_eCRF_Antwort_R4"
     ]
   },
   "id": "1",

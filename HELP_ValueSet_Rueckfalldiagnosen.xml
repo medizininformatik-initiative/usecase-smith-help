@@ -1,66 +1,66 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="2.16.840.1.113883.3.1937.777.22.11.12--20190609194546"/>
-    <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-    </meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
-        <valuePeriod>
-            <start value="2019-06-09T19:45:46+02:00"/>
-        </valuePeriod>
-    </extension>
-    <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.12--20190609194546"/>
-    <identifier>
-        <use value="official"/>
-        <system value="http://art-decor.org/ns/oids/vs"/>
-        <value value="2.16.840.1.113883.3.1937.777.22.11.12"/>
-    </identifier>
-    <version value="2019-06-09T19:45:46"/>
-    <name value="HELP-Rückfalldiagnosen"/>
-    <title value="HELP-Rückfalldiagnosen"/>
-    <status value="draft"/>
-    <experimental value="false"/>
-    <publisher value="SMITH"/>
-    <description value="HELP-Rückfalldiagnosen"/>
-    <immutable value="false"/>
-    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
-    <compose>
-        <include>
-            <system value="http://snomed.info/sct"/>
-            <concept>
-                <code value="128477000"/>
-                <display value="Abscess (disorder)"/>
-            </concept>
-            <concept>
-                <code value="74964007"/>
-                <display value="Other (qualifier value)"/>
-            </concept>
-        </include>
-        <include>
-            <system value="urn:oid:1.2.276.0.76.5.409"/>
-            <concept>
-                <code value="A41.0"/>
-                <display value="Sepsis durch Staphylococcus aureus"/>
-            </concept>
-            <concept>
-                <code value="M86"/>
-                <display value="Osteomyelitis"/>
-            </concept>
-            <concept>
-                <code value="I33"/>
-                <display value="Akute und subakute Endokarditis"/>
-            </concept>
-            <concept>
-                <code value="T82.7"/>
-                <display value="Infektion und entzündliche Reaktion durch sonstige Geräte, Implantate oder Transplantate im Herzen und in den Gefäßen"/>
-            </concept>
-            <concept>
-                <code value="M46.4"/>
-                <display value="Diszitis, nicht näher bezeichnet"/>
-            </concept>
-            <concept>
-                <code value="T84"/>
-                <display value="Komplikationen durch orthopädische Endoprothesen, Implantate oder Transplantate"/>
-            </concept>
-        </include>
-    </compose>
+  <id value="2.16.840.1.113883.3.1937.777.22.11.12--20190609194546" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2019-06-09T19:45:46+02:00" />
+    </valuePeriod>
+  </extension>
+  <url value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.12--20190609194546" />
+  <identifier>
+    <use value="official" />
+    <system value="http://art-decor.org/ns/oids/vs" />
+    <value value="2.16.840.1.113883.3.1937.777.22.11.12" />
+  </identifier>
+  <version value="2019-06-09T19:45:46" />
+  <name value="HELP-Rückfalldiagnosen" />
+  <title value="HELP-Rückfalldiagnosen" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="SMITH" />
+  <description value="HELP-Rückfalldiagnosen" />
+  <immutable value="false" />
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="128477000" />
+        <display value="Abscess (disorder)" />
+      </concept>
+      <concept>
+        <code value="74964007" />
+        <display value="Other (qualifier value)" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+      <concept>
+        <code value="A41.0" />
+        <display value="Sepsis durch Staphylococcus aureus" />
+      </concept>
+      <concept>
+        <code value="M86" />
+        <display value="Osteomyelitis" />
+      </concept>
+      <concept>
+        <code value="I33" />
+        <display value="Akute und subakute Endokarditis" />
+      </concept>
+      <concept>
+        <code value="T82.7" />
+        <display value="Infektion und entzündliche Reaktion durch sonstige Geräte, Implantate oder Transplantate im Herzen und in den Gefäßen" />
+      </concept>
+      <concept>
+        <code value="M46.4" />
+        <display value="Diszitis, nicht näher bezeichnet" />
+      </concept>
+      <concept>
+        <code value="T84" />
+        <display value="Komplikationen durch orthopädische Endoprothesen, Implantate oder Transplantate" />
+      </concept>
+    </include>
+  </compose>
 </ValueSet>
