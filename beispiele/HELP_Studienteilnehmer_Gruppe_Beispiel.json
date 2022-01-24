@@ -1,5 +1,12 @@
 {
     "resourceType": "Group",
+    "meta": {
+        "versionId": "205790",
+        "lastUpdated": "2016-03-09T15:35:58.018+00:00",
+        "profile": [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4"
+        ]
+    },
     "identifier": [{
             "system": "https://www.uniklinikum-leipzig.de/fhir/core/NamingSystem/group-identifier",
             "value": "100745087_51",
@@ -27,16 +34,26 @@
             }
         }
     ],
-    "meta": {
-        "versionId": "205790",
-        "lastUpdated": "2016-03-09T15:35:58.018+00:00",
-        "profile": [
-            "http://www.smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4"
-        ]
-    },
     "type": "person",
     "actual": true,
     "quantity": 4,
+    "characteristic": [{
+            "code": {
+                "coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+						"code": "M",
+						"display": "Male"
+					}
+				],
+                "text": "gender"
+            },
+            "valueCodeableConcept": {
+                "text": "mixed"
+            },
+            "exclude": false
+        }
+    ],
     "member": [{
             "entity": {
                 "reference": "Patient/111"
@@ -67,15 +84,5 @@
                 "start": "2015-08-06"
             }
         }
-    ],
-    "characteristic": [{
-            "code": {
-                "text": "gender"
-            },
-            "valueCodeableConcept": {
-                "text": "mixed"
-            },
-            "exclude": false
-        },
     ]
 }
