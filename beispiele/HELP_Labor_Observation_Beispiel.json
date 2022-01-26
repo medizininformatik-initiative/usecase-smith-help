@@ -5,6 +5,7 @@
             "http://www.smith.care/fhir/StructureDefinition/HELP_Observation_R4"
         ]
     },
+    "id": "Labobs123",
     "identifier": [{
             "type": {
                 "coding": [{
