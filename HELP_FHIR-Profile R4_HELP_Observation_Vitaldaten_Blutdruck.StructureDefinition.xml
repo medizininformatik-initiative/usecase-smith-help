@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://smith.care/fhir/StructureDefinition/HELP_Observation_Vitaldaten_Blutdruck" />
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Observation_Vitaldaten_Blutdruck" />
   <name value="HELP_Observation_Vitaldaten_Blutdruck" />
   <status value="draft" />
   <contact>
