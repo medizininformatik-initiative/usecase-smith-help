@@ -1,5 +1,6 @@
 {
   "resourceType": "Observation",
+  "id": "ObsFK",
   "meta": {
     "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Fremdkoerper_ja_nein_Observation_R4"]
   },
