@@ -1,5 +1,10 @@
 {
 	"resourceType": "DiagnosticReport",
+	 "meta": {
+        "profile":  [
+            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Befunde_DiagnosticReport"
+        ]
+    },
 	"id": "5999",
 	"identifier": [
 		{

@@ -3,6 +3,7 @@
   "meta": {
     "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_ITS_Observation_R4"]
   },
+  "id": "Glas123",
   "identifier": [
     {
       "use": "official",

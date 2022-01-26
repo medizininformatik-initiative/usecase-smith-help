@@ -5,6 +5,7 @@
       "http://www.smith.care/fhir/StructureDefinition/HELP_Diagnose_Staphylokokken-Infektion-R4"
     ]
   },
+  "id":"Dia123",
   "clinicalStatus": {
     "coding": [
       {
