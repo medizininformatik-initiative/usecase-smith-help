@@ -7,6 +7,7 @@
             "http://www.smith.care/fhir/StructureDefinition/HELP_Studienteilnehmer_Gruppe_R4"
         ]
     },
+    "id": "Gro123",
     "identifier": [{
             "system": "https://www.uniklinikum-leipzig.de/fhir/core/NamingSystem/group-identifier",
             "value": "100745087_51",
