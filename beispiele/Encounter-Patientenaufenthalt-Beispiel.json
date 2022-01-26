@@ -2,7 +2,7 @@
   "resourceType": "Encounter",
   "meta": {
         "profile":  [
-            "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/KontaktGesundheitseinrichtung"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
         ]
     },
   "id": "555",
