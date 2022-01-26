@@ -1,4 +1,4 @@
-Observation xmlns="http://hl7.org/fhir">
+<Observation xmlns="http://hl7.org/fhir">
   <id value="Herzfrequenz" />
   <meta>
     <profile value="http://www.smith.care/fhir/StructureDefinition/HELP_Observation_Vitaldaten" />
