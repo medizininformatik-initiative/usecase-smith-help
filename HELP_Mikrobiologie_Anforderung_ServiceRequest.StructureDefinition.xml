@@ -122,6 +122,7 @@
     </element>
     <element id="ServiceRequest.authoredOn">
       <path value="ServiceRequest.authoredOn" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.reasonCode">
