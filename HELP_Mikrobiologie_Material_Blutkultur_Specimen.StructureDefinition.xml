@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Material-Blutkultur_Specimen" />
-  <name value="HELP_Mikrobiologie_Material-Blutkultur_Specimen" />
+  <id value="8f2334b3-33de-4f02-8db4-e285355f218c" />
+  <meta>
+    <versionId value="5" />
+    <lastUpdated value="2022-01-26T15:08:19.649+00:00" />
+  </meta>
+  <url value="http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Material_Blutkultur_Specimen" />
+  <name value="HELP_Mikrobiologie_Material_Blutkultur_Specimen" />
   <status value="draft" />
+  <date value="2022-01-26T15:08:19.6024889+00:00" />
   <contact>
     <name value="SMITH_UKJ" />
   </contact>
@@ -90,14 +96,18 @@
     </element>
     <element id="Specimen.collection.method.coding">
       <path value="Specimen.collection.method.coding" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.method.coding.system">
       <path value="Specimen.collection.method.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0488" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.method.coding.code">
       <path value="Specimen.collection.method.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.method.text">
