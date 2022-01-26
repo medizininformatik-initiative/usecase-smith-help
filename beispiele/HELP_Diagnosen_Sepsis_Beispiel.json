@@ -3,6 +3,7 @@
   "meta": {
     "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Diagnose_Sepsis_R4"]
   },
+  "id": "CON123",
  "identifier": [
     {
       "use": "official",
