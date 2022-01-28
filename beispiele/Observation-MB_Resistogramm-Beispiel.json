@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "meta": {
-        "profile":  [
-            "http://www.smith.care/fhir/StructureDefinition/HELP_Mikrobiologie_Resistogramm_Observation"
-        ]
-    },
-  "id": "5052",
+  "id": "5021",
   "identifier": [
     {
       "use": "official",
@@ -17,9 +12,9 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:1.2.276.0.76.5.308",
-        "code": "08756",
-        "display": "Vancomycin"
+        "system": "http://snomed.info/sct",
+        "code": "428787002",
+        "display": "Macrolide"
       }
     ]
   },
@@ -30,9 +25,16 @@
     "start": "2018-11-20T07:28:00+01:00",
     "end": "2018-11-20T10:28:00+01:00"
   },
-  "derivedFrom":{
-    "reference": "Observation/5050"
+  "issued": "2018-11-21T10:28:00+01:00",
+  "valueQuantity": {
+    "value": 0.25,
+    "comparator": "<="
   },
+  "derivedFrom": [
+    {
+      "reference": "Observation/5010"
+    }
+  ],
   "interpretation": [
     {
       "coding": [
