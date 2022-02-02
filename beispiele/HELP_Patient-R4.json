@@ -2,7 +2,8 @@
   "resourceType": "Patient",
 "meta":{
     "profile": [
-        "http://www.smith.care/fhir/StructureDefinition/HELP_Person_PatientIn"
+        "http://www.smith.care/fhir/StructureDefinition/HELP_Person_PatientIn",
+        "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
     ]
   },
   "id": "111",
