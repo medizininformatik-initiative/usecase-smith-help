@@ -2,7 +2,8 @@
   "resourceType": "Condition",
   "id":"Cond123",
   "meta": {
-    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Infecktionsfokus_Condition_R4"]
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Infecktionsfokus_Condition_R4",
+                "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"]
   },
   "code": {
     "coding": [
