@@ -5,7 +5,8 @@
 		"versionId": "205790",
 		"lastUpdated": "2016-03-09T15:35:58.018+00:00",
 		"profile": [
-			"http://www.smith.care/fhir/StructureDefinition/HELP_Labor_DiagnosticReport_R4"
+			"http://www.smith.care/fhir/StructureDefinition/HELP_Labor_DiagnosticReport_R4",
+			"https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
 		]
 	},
 	"identifier": [
