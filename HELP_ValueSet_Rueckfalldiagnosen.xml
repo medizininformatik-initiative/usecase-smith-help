@@ -36,7 +36,7 @@
       </concept>
     </include>
     <include>
-      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm" />
       <concept>
         <code value="A41.0" />
         <display value="Sepsis durch Staphylococcus aureus" />
