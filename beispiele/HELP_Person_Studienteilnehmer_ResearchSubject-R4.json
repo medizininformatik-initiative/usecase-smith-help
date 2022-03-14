@@ -1,0 +1,39 @@
+{
+  "resourceType": "ResearchSubject",
+  "meta":{
+    "profile": [
+        "http://www.smith.care/fhir/StructureDefinition/HELP_Person_Studienteilnehmer_ResearchSubject"
+    ]
+  },
+  "id": "1110",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "ANON"
+            }
+          ],
+        "text": "SIC"
+      },
+      "system": "http://www.medizininformatik-initiative.de/FHIR/Core/NamingSystem/SubjectIdentificationCode",
+      "value": "1115"
+    }
+  ],
+  "status": "on-study",
+  "period": {
+    "start": "2018-10-08"
+  },
+  "study": {
+    "reference": "ResearchStudy/2220"
+  },
+  "individual": {
+    "reference": "Patient/111"
+  },
+   "assignedArm" : "120821000119107",
+   "consent": {
+    "reference": "Consent/456765567890"
+  }
+}
