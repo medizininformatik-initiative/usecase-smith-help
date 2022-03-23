@@ -1,0 +1,51 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": ["http://www.smith.care/fhir/StructureDefinition/HELP_Diagnose_Sepsis_R4"]
+  },
+ "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.uk-halle.de/fhir/source/copra",
+      "value": "2354:4523523453"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "10001005",
+        "display": "Bacterial sepsis"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "code": "I33.0",
+        "version": "2021",
+        "display": "Akute und subakute infektioese Endokarditis"
+      }
+	  ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "37949006",
+          "display": "Endocardium structure"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "111111",
+	"type": "Patient"
+  },
+    "encounter": {
+    "reference": "99999",
+	"type": "Encounter"
+  },
+ "onsetPeriod": {
+        "start": "2020-02-13T16:56:00+01:00"
+    },
+  "recordedDate": "2020-04-26T12:00:00+01:00"
+}
