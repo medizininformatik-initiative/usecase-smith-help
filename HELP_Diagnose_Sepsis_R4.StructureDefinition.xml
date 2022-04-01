@@ -43,27 +43,42 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.code.coding:sepsis-diagnosen">
+    <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
-      <sliceName value="sepsis-diagnosen" />
+      <sliceName value="icd10-gm" />
       <min value="1" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.8--20190609160306" />
-      </patternCoding>
       <binding>
         <strength value="required" />
-        <description value="Sepsis-Diagnosen: Endokarditis, Sepsis, septischer Schock und septische Metastasen" />
         <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.1937.777.22.11.8--20190609160306" />
       </binding>
     </element>
-    <element id="Condition.code.coding:sepsis-diagnosen.system">
+    <element id="Condition.code.coding:icd10-gm.system">
       <path value="Condition.code.coding.system" />
-      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
     </element>
-    <element id="Condition.code.coding:sepsis-diagnosen.code">
-      <path value="Condition.code.coding.code" />
-      <min value="1" />
+    <element id="Condition.code.coding:alpha-id">
+      <path value="Condition.code.coding" />
+      <sliceName value="alpha-id" />
+    </element>
+    <element id="Condition.code.coding:alpha-id.system">
+      <path value="Condition.code.coding.system" />
+      <fixedUri value="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/Alpha-ID-SE/_node.html" />
+    </element>
+    <element id="Condition.code.coding:sct">
+      <path value="Condition.code.coding" />
+      <sliceName value="sct" />
+    </element>
+    <element id="Condition.code.coding:sct.system">
+      <path value="Condition.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Condition.code.coding:orphanet">
+      <path value="Condition.code.coding" />
+      <sliceName value="orphanet" />
+    </element>
+    <element id="Condition.code.coding:orphanet.system">
+      <path value="Condition.code.coding.system" />
+      <fixedUri value="https://www.orpha.net/" />
     </element>
   </differential>
 </StructureDefinition>
